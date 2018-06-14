@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+apply plugin: 'walle'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.zhihuianxin.xyaxf"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias debug_store_key_alias
+            keyPassword debug_store_key_password
+            storeFile rootProject.file(debug_key_file)
+            storePassword debug_store_password
+            v2SigningEnabled true
+        }
+        release {
+            keyAlias release_store_key_alias
+            keyPassword release_store_key_password
+            storeFile rootProject.file(release_key_file)
+            storePassword release_store_key_password
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "AnXinDEBUG", "true"
+            buildConfigField "String", "API_HOST", "\"https://appserver-v2-test.zhihuianxin.com/app-service/2.0.5/\"" //API Host
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "5Nw5fa7FTHAgg7mEhBwI89",
+                    GETUI_APP_KEY   : "nHc3UJpr8M6LFYAzBmHjW5",
+                    GETUI_APP_SECRET: "xdpLzRLx6W7xx6EceYTkA8",
+                    PACKAGE_NAME    : defaultConfig.applicationId + applicationIdSuffix,
+                    Suffix          : applicationIdSuffix,
+                    DAFANGYA        : 'com.dafangya.app.pro.fileprovider.debug',
+                    APP_ICON        : "app_icon_test"]
+        }
+
+        preview {
+            buildConfigField "boolean", "AnXinDEBUG", "false"
+            buildConfigField "String", "API_HOST", "\"https://appserver-preview.axinfu.com/app-service/2.0.5/\"" //API Host
+            applicationIdSuffix ".preview"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "vuuynusxhb7r1pP6sxV597",
+                    GETUI_APP_KEY   : "1D0xavcwDbAH8yoFM9BL42",
+                    GETUI_APP_SECRET: "SynzdZ8f3o5OUuCEFAQSl4",
+                    PACKAGE_NAME    : defaultConfig.applicationId + applicationIdSuffix,
+                    Suffix          : applicationIdSuffix,
+                    DAFANGYA        : 'com.dafangya.app.pro.fileprovider.preview',
+                    APP_ICON        : "app_icon_preview"]
+
+        }
+
+        release {
+            buildConfigField "boolean", "AnXinDEBUG", "false"
+            buildConfigField "String", "API_HOST", "\"https://appserver-v2-online.zhihuianxin.com/app-service/2.0.5/\"" //API Host
+            applicationIdSuffix ""
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "vuuynusxhb7r1pP6sxV597",
+                    GETUI_APP_KEY   : "1D0xavcwDbAH8yoFM9BL42",
+                    GETUI_APP_SECRET: "SynzdZ8f3o5OUuCEFAQSl4",
+                    PACKAGE_NAME    : defaultConfig.applicationId + applicationIdSuffix,
+                    Suffix          : applicationIdSuffix,
+                    DAFANGYA        : 'com.dafangya.app.pro.fileprovider',
+                    APP_ICON        : "app_icon_android"]
+        }
+    }
+
+    walle {
+        // 指定渠道包的输出路径
+        apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+        // 定制渠道包的APK的文件名称
+        apkFileNameFormat = 'axf_android_${buildType}_v${versionName}(${versionCode})_${channel}_${packageName}.apk';
+        // 渠道配置文件
+        channelFile = new File("${project.getProjectDir()}/channel")
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.meituan.android.walle:library:1.1.6'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

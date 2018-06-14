@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axinfu.iml" filepath="$PROJECT_DIR$/axinfu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axinfu-ui/axinfu-ui.iml" filepath="$PROJECT_DIR$/axinfu-ui/axinfu-ui.iml" />
+    </modules>
+  </component>
+</project>
