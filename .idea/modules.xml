@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu.iml" filepath="$PROJECT_DIR$/axinfu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axinfu-lib/axinfu-lib.iml" filepath="$PROJECT_DIR$/axinfu-lib/axinfu-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axinfu-model/axinfu-model.iml" filepath="$PROJECT_DIR$/axinfu-model/axinfu-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu-ui/axinfu-ui.iml" filepath="$PROJECT_DIR$/axinfu-ui/axinfu-ui.iml" />
     </modules>
   </component>

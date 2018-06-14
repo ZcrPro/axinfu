@@ -32,7 +32,7 @@ android {
     buildTypes {
         debug {
             buildConfigField "boolean", "AnXinDEBUG", "true"
-            buildConfigField "String", "API_HOST", "\"https://appserver-v2-test.zhihuianxin.com/app-service/2.0.5/\"" //API Host
+            buildConfigField "String", "API_HOST", "\"https://appserver-v2-test.zhihuianxin.com/app-service/2.0.5/\""
             minifyEnabled false
             applicationIdSuffix ".debug"
             signingConfig signingConfigs.debug
@@ -46,10 +46,9 @@ android {
                     DAFANGYA        : 'com.dafangya.app.pro.fileprovider.debug',
                     APP_ICON        : "app_icon_test"]
         }
-
         preview {
             buildConfigField "boolean", "AnXinDEBUG", "false"
-            buildConfigField "String", "API_HOST", "\"https://appserver-preview.axinfu.com/app-service/2.0.5/\"" //API Host
+            buildConfigField "String", "API_HOST", "\"https://appserver-preview.axinfu.com/app-service/2.0.5/\""
             applicationIdSuffix ".preview"
             minifyEnabled true
             zipAlignEnabled true
@@ -64,17 +63,16 @@ android {
                     Suffix          : applicationIdSuffix,
                     DAFANGYA        : 'com.dafangya.app.pro.fileprovider.preview',
                     APP_ICON        : "app_icon_preview"]
-
         }
-
         release {
             buildConfigField "boolean", "AnXinDEBUG", "false"
-            buildConfigField "String", "API_HOST", "\"https://appserver-v2-online.zhihuianxin.com/app-service/2.0.5/\"" //API Host
-            applicationIdSuffix ""
+            buildConfigField "String", "API_HOST", "\"https://appserver-v2-online.zhihuianxin.com/app-service/2.0.5/\""
             minifyEnabled true
             zipAlignEnabled true
             shrinkResources true
+            debuggable false
             signingConfig signingConfigs.release
+            applicationIdSuffix ""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [
                     GETUI_APP_ID    : "vuuynusxhb7r1pP6sxV597",
@@ -91,20 +89,20 @@ android {
         // 指定渠道包的输出路径
         apkOutputFolder = new File("${project.buildDir}/outputs/channels");
         // 定制渠道包的APK的文件名称
-        apkFileNameFormat = 'axf_android_${buildType}_v${versionName}(${versionCode})_${channel}_${packageName}.apk';
+        apkFileNameFormat = 'axf_android_${buildType}_v${versionName}(${versionCode})_${channel}.apk';
         // 渠道配置文件
         channelFile = new File("${project.getProjectDir()}/channel")
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.meituan.android.walle:library:1.1.6'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation project(':axinfu-lib')
+    implementation project(':axinfu-model')
+    implementation project(':axinfu-ui')
 }
