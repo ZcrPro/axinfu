@@ -1,10 +1,9 @@
 apply plugin: 'com.android.library'
 
+def dbflow_version = "4.2.4"
+
 android {
     compileSdkVersion 27
-
-
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 27
@@ -13,6 +12,7 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }  //annotationProcessor在Androidstudio3.0以后报错
     }
 
     buildTypes {
@@ -28,9 +28,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    api "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    api "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
 }

@@ -2,6 +2,7 @@ package com.zhihuianxin.xyaxf;
 
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.com.axinfu_model.DemoTest;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -23,6 +24,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         text.setText("包名:" + getAppProcessName(this) + "服务器地址：" + BuildConfig.API_HOST);
+        DemoTest demoTest = new DemoTest();
+        demoTest.setId("111");
+        demoTest.setName("111");
+        demoTest.save();
+        //查询数据库
     }
 
     /**
