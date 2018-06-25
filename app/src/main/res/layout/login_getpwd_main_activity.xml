@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/s15"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp">
+        <RelativeLayout
+                android:id="@+id/modify_pwd_bycode"
+                android:background="@drawable/btn_bg_selector"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+            <TextView
+                    android:textSize="@dimen/s11"
+                    android:text="短信验证码找回"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:background="@drawable/next_arrow_icon"
+                    android:layout_marginRight="@dimen/s15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/axf_line_gray" android:layout_width="fill_parent" android:layout_height="0.8dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/modify_pwd_byidmsg"
+                android:background="@drawable/btn_bg_selector"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+            <TextView
+                    android:textSize="@dimen/s11"
+                    android:text="核实身份信息找回"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:background="@drawable/next_arrow_icon"
+                    android:layout_marginRight="@dimen/s15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

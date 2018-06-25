@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+   <android.support.v7.widget.RecyclerView
+       android:background="@drawable/fee_cancle_2"
+       android:layout_marginTop="@dimen/s10"
+       android:id="@+id/recyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginBottom="@dimen/s10"
+        android:layout_marginTop="@dimen/s10"
+        android:background="@color/axf_line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s10" />
+
+    <TextView
+        android:layout_marginRight="@dimen/s20"
+        android:layout_marginLeft="@dimen/s20"
+        android:padding="@dimen/s10"
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fee_cancle_2"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/axf_common_blue"
+        android:textSize="18sp" />
+
+</LinearLayout>

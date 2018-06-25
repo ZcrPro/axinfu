@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical"
+    android:padding="@dimen/s10">
+
+    <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/axf_bg_blue"
+            android:gravity="center">
+
+        <ImageView
+                android:paddingLeft="@dimen/s10"
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_null" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_null"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/s10"
+                android:text="暂无未出账单"
+                android:textColor="#208af1" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/mainview"
+                android:layout_alignBottom="@+id/mainview"
+                android:id="@+id/leftimg"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/axxyf_left" />
+
+        <ImageView
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/mainview"
+                android:layout_alignBottom="@+id/mainview"
+                android:id="@+id/rightimg"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/axxyf_right" />
+
+
+
+        <LinearLayout
+                android:layout_toLeftOf="@+id/rightimg"
+                android:layout_toRightOf="@id/leftimg"
+                android:id="@+id/mainview"
+            android:padding="@dimen/s20"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账单明细"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <com.zhihuianxin.xyaxf.app.view.SwipeRefreshAndLoadMoreLayoutStick
+                android:id="@+id/swipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:direction="both">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            </com.zhihuianxin.xyaxf.app.view.SwipeRefreshAndLoadMoreLayoutStick>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

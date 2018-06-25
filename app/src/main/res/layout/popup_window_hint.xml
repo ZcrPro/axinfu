@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/popup_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_floating_material_light"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s48"
+            android:orientation="vertical">
+
+            <View style="@style/gray_line_h" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s48"
+                android:background="@color/axf_common_blue">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/s50"
+                    android:layout_height="@dimen/s48"
+                    android:padding="@dimen/s14"
+                    android:src="@drawable/back_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="@dimen/s12"
+                    android:text="选择银行"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View style="@style/gray_line_h" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+        </RelativeLayout>
+
+        <View style="@style/gray_line_h" />
+
+        <LinearLayout
+            android:id="@+id/ll_selected_bank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:layout_alignParentBottom="true"
+            android:background="@color/axf_text_content_gray"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View style="@style/gray_line_h" />
+
+            <TextView
+                android:id="@+id/tv_trade_limit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s50"
+                android:background="@color/warn_bg"
+                android:padding="@dimen/s10"
+                android:text="*支付金额可能超出所选银行的单笔限额,建议更换银行或返回修改金额"
+                android:textColor="@color/warn_text"
+                android:textSize="14sp" />
+
+            <View style="@style/gray_line_h" />
+
+        </LinearLayout>
+
+        <View style="@style/gray_line_h" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s50"
+            android:alpha="1"
+            android:background="@color/background_floating_material_light">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待支付："
+                    android:textColor="@color/axf_text_title_gray"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/daizhifu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/axf_common_red"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_go_pay"
+                android:layout_width="@dimen/s100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/axf_common_blue"
+                android:gravity="center"
+                android:text="去支付"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <!--<Button-->
+            <!--android:background="@color/axf_btn_uncheck_gray"-->
+            <!--android:id="@+id/btn_back"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="@dimen/s40"-->
+            <!--android:layout_margin="@dimen/s5"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="返回"-->
+            <!--android:textColor="@color/axf_text_content_gray" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_go_pay"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="@dimen/s40"-->
+                <!--android:layout_margin="@dimen/s5"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/axf_btn_uncheck_blue"-->
+                <!--android:enabled="false"-->
+                <!--android:text="去支付"-->
+                <!--android:textColor="@color/white" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

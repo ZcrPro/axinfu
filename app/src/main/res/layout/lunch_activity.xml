@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+            android:scaleType="fitCenter"
+            android:layout_above="@id/bottomId"
+            android:id="@+id/lunch_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    <LinearLayout
+            android:layout_marginTop="@dimen/s30"
+            android:id="@+id/bottomId"
+            android:layout_marginBottom="@dimen/s10"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/lunch_bottom_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:textColor="@color/axf_light_gray"
+                android:layout_marginTop="@dimen/s10"
+                android:textSize="@dimen/text_size_s4"
+                android:layout_gravity="center_horizontal"
+                android:text="© 2014-2018 Axinfu.com All Rights Reserved"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

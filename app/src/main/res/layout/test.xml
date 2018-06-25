@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+            android:background="@drawable/bg"
+            android:visibility="visible"
+            android:id="@+id/banner_default_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s200">
+        <ImageView
+                android:id="@+id/sun_def"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/s20"
+                android:background="@drawable/sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <RelativeLayout
+                android:id="@+id/ani3"
+                android:layout_marginLeft="@dimen/s50"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/plant4"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:layout_above="@+id/local"
+                    android:layout_marginRight="-15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/plant4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:id="@+id/plant3"
+                    android:layout_marginRight="-20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/plant3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <View android:layout_width="1dp"
+                  android:id="@+id/local"
+                  android:layout_height="1dp"
+                  android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ImageView
+
+                android:background="@drawable/school_logo"
+                android:id="@+id/loufang_def"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:id="@+id/tree_view_def"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/plant_def"
+                    android:background="@drawable/plant1_left"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView
+                    android:background="@drawable/plant1_right"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

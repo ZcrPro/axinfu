@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/s5">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#10000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s300"
+            android:background="@color/white"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cancelremark"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:src="@drawable/close_black_icon"
+                    android:layout_width="@dimen/s10"
+                    android:layout_height="@dimen/s10"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="更换支付方式"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="@dimen/text_size_s2" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/line_h"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/s1"
+                android:layout_marginTop="@dimen/s1" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

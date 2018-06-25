@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ecard_edittext_normal" android:state_checked="false" />
+    <item android:drawable="@drawable/ecard_edittext_focused" android:state_checked="true" />
+</selector>

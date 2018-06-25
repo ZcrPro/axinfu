@@ -1,11 +1,90 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ecard_record_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/ecard_record_pop_enter_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/ecard_record_pop_exit_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="BottomDialog" parent="full_screen_dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimBottom</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="UnionPayErrorDialog" parent="full_screen_dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimBottom</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BottomDialogSimple" parent="full_screen_dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimBottom</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="full_screen_dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimFallDown</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogAnimFallDown">
+        <item name="android:windowEnterAnimation">@anim/fall_down_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/fall_down_dialog_out</item>
+    </style>
+
+    <style name="DialogAnimBottom">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_out</item>
+    </style>
+
+    <style name="TransparentActivityStyle">
+        <item name="android:windowBackground">@color/axf_important_notice_bg</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="TackPictureActivityStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="gray_line_h">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
+    <!--用于大额支付提示是否超限的popupwindow从下至上的动画效果-->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="dialogstyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
     </style>
 
 </resources>

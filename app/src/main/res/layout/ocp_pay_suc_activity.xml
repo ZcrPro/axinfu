@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/s20"
+            android:layout_weight="1"
+            android:gravity="top|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/payshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/s20"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_marginTop="@dimen/s10"
+                android:ellipsize="end"
+                android:text="商家"
+                android:textSize="@dimen/s15" />
+
+            <com.zhihuianxin.xyaxf.app.view.GifView
+                android:id="@+id/gif_view"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/s10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="支付成功"
+                android:textColor="@color/axf_light_gray"
+                android:textSize="@dimen/s13" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/s10"
+                android:text="￥20.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s30" />
+
+            <TextView
+                android:id="@+id/youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_marginTop="@dimen/s2"
+                android:ellipsize="end"
+                android:textColor="@color/axf_common_red"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/s60"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/s10" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/payway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:singleLine="true"
+                    android:text="付款方式: "
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/paytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:singleLine="true"
+                    android:text="交易时间: "
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/payno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:singleLine="true"
+                    android:text="订  单  号: "
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/payremark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s10"
+                    android:text="备        注: "
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next"
+                style="@style/button_text"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s50"
+                android:layout_marginRight="@dimen/s50"
+                android:layout_marginTop="@dimen/s20"
+                android:background="@drawable/btn_axf_blue"
+                android:gravity="center"
+                android:text="回首页" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/gy_dialog_bg"
+              android:layout_width="240dp"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="230dp" android:layout_height="120dp">
+        <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                android:text="需要支付插件(大约18M)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <View
+                android:layout_above="@+id/bom"
+                android:background="@color/axf_line_gray"
+                android:layout_width="fill_parent" android:layout_height="1dp"/>
+        <LinearLayout
+                android:id="@+id/bom"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+            <LinearLayout
+                    android:id="@+id/download"
+                    android:background="@drawable/dialog_click_bg"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:gravity="center_horizontal"
+                        android:text="下载"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:layout_width="1dp" android:layout_height="fill_parent"
+            android:background="@color/axf_line_gray"/>
+            <LinearLayout
+                    android:id="@+id/logcancel"
+                    android:background="@drawable/dialog_click_bg"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:text="取消"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

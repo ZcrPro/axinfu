@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="@dimen/s20"
+        android:text="请选择一种解锁方式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/gestureView"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg_selector">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s15"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手势密码" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/gestureSwitch"
+            android:layout_marginRight="@dimen/s15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/axf_common_red"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/s15"
+            android:layout_toLeftOf="@+id/gestureSwitch"
+            android:text="未设置"
+            android:layout_centerVertical="true"
+            android:id="@+id/unGestureTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/axf_line_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_finger"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg_selector">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s15"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指纹解锁" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/gestureSwitch2"
+            android:layout_marginRight="@dimen/s15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/axf_common_red"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/s15"
+            android:layout_toLeftOf="@+id/gestureSwitch2"
+            android:text="未设置"
+            android:layout_centerVertical="true"
+            android:id="@+id/unGestureTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/axf_line_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

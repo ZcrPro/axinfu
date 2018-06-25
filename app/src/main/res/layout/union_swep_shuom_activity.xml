@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout
+                    android:id="@+id/textid"
+                    android:layout_marginRight="@dimen/s20"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_marginTop="@dimen/s25"
+                        android:textSize="@dimen/s15"
+                        android:text="1.如何使用付款？"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    登录“校园安心付”APP，点击“安心付”板块的“付款码”，向收银员展示二维码/条形码。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    收银员使用扫码枪或者摄像头扫描二维码/条形码，操作完成后完成支付。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <TextView
+                        android:layout_marginTop="@dimen/s20"
+                        android:textSize="@dimen/s15"
+                        android:text="2.如何确认支付成功？"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    支付成功后，在手机联网的情况下，会为你展示结果页面。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    支付成功后，你可以在“付款码”页面右上角的“。。。”中点击“交易记录”查询。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    支付成功后，收银员也会获取到订单支付结果，您可以选择与收银员确认支付结果。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <TextView
+                        android:layout_marginTop="@dimen/s20"
+                        android:textSize="@dimen/s15"
+                        android:text="3.付款交易说明"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    收银员使用扫码枪或者摄像头扫描二维码/条形码后，请输入支付密码确认交易。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_width="@dimen/s5"
+                          android:layout_marginTop="@dimen/s12"
+                          android:layout_height="@dimen/s5"
+                          android:background="@drawable/union_swep_circle_point_gray"/>
+                    <TextView
+                            android:lineSpacingExtra="@dimen/s3"
+                            android:layout_marginTop="@dimen/s5"
+                            android:gravity="left|center_vertical"
+                            android:text="    小额免密功能默认开启，开启后，交易金额200以内可免输支付密码。"
+                            android:textSize="@dimen/s13"
+                            android:textColor="#909090"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <TextView
+                        android:layout_marginTop="@dimen/s20"
+                        android:layout_marginBottom="@dimen/s20"
+                        android:textSize="@dimen/s13"
+                        android:textColor="@color/axf_common_blue"
+                        android:text="温馨提示：请不要向任何人透露你的银行卡交易密码"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                    android:background="@color/axf_bg_blue"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/textid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

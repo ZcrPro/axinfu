@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pay_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginTop="@dimen/s5"
+            android:drawableRight="@drawable/a_icon"
+            android:paddingBottom="@dimen/s5"
+            android:paddingRight="@dimen/s5"
+            android:paddingTop="@dimen/s5"
+            android:text="请选择支付方式"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/ll_pay_way_line"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@color/axf_light_gray"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="@dimen/s10"
+        android:id="@+id/rc_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rc_recommend"
+        android:layout_marginTop="@dimen/s10"
+        android:id="@+id/rc_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <Button
+        android:layout_below="@+id/rc_common"
+        android:background="@drawable/btn_axf_blue"
+        android:layout_margin="@dimen/s15"
+        style="@style/button_text"
+        android:layout_marginTop="@dimen/s20"
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:text="确认支付"
+        android:textColor="@color/white"
+        android:textSize="13sp"/>
+
+    <View
+        android:id="@+id/grayBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="-500dp"
+        android:id="@+id/neePasswordView"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:background="@drawable/window">
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_above="@+id/limt_content"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_s3" />
+
+        <TextView
+            android:id="@+id/limt_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/change_pay_way"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_s3" />
+
+        <Button
+            android:id="@+id/change_pay_way"
+            style="@style/button_text"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/goon"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s25"
+            android:layout_marginRight="@dimen/s25"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@drawable/btn_axf_blue"
+            android:text="更换支付方式"
+            android:textSize="@dimen/text_size_s3" />
+
+        <TextView
+            android:id="@+id/goon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/s15"
+            android:text="仍要支付"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="@dimen/text_size_s3" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/s20"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="number"
+            android:maxLength="18"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_margin="@dimen/s15"
+            android:numeric="integer"
+            android:hint="请输入银行卡号"
+            style="@style/edit_text"
+            android:id="@+id/inputEdit"/>
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/iv_w_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/w_red_icon"/>
+
+            <TextView
+                android:text=""
+                android:id="@+id/w_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/s15"
+                android:textColor="@color/axf_common_red"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        style="@style/button_text"
+        android:layout_margin="@dimen/s15"
+        android:background="@drawable/btn_axf_blue"
+        android:enabled="false"
+        android:text="下一步" />
+
+</LinearLayout>

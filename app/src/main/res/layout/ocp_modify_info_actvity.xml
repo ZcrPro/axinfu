@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/axf_bg_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/axf_common_blue">
+
+        <RelativeLayout
+            android:id="@+id/back_icon"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/s15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/s13" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_info"
+        android:layout_margin="@dimen/s15"
+        style="@style/edit_text"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/edit_pass"
+        android:hint="请输入登陆密码"
+        android:layout_margin="@dimen/s15"
+        style="@style/edit_text"/>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/button_text"
+        android:text="完成"
+        android:layout_marginLeft="@dimen/s15"
+        android:layout_marginRight="@dimen/s15"
+        android:background="@drawable/btn_axf_blue"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/s10"
+        android:id="@+id/getPwdId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/s15"
+        android:text="忘记密码?"
+        android:textColor="@color/axf_common_blue" />
+
+</LinearLayout>

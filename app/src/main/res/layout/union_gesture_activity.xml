@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_weight="1.5"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/s17"
+                    android:textColor="@color/black"
+                    android:id="@+id/gesTitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="@dimen/s15"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/s12"
+                    android:textColor="#ff487c"
+                    android:id="@+id/gesContentTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <com.zhihuianxin.xyaxf.app.verification.UnlockView
+            android:id="@+id/unlock"
+            android:layout_weight="3.4"
+            android:layout_height="0dp"
+            android:layout_width="match_parent" />
+    <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent" android:layout_height="0dp">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/link_xieyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s20"
+        android:autoLink="all"
+        android:gravity="center"
+        android:text="指纹解锁"
+        android:textColor="@color/axf_common_blue" />
+
+</LinearLayout>

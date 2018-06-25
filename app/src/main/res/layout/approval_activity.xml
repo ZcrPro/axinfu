@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_wa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/axf_text_uncheck_blue"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/s5"
+            android:drawableLeft="@drawable/w_icon"
+            android:drawablePadding="@dimen/s3"
+            android:gravity="left"
+            android:text="请如实提交你的信息，以便我们更快的审核"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginTop="@dimen/s10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_student_no"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:minWidth="@dimen/s17"
+                android:text="学号"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_toRightOf="@id/tv_student_no"
+                android:background="@drawable/payment_check_edittext"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_content_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="专业"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/ed_idcard"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_toRightOf="@id/tv_name2"
+                android:background="@drawable/payment_check_edittext"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_content_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_name3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="入学年份"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ed_ruxue_year"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_toRightOf="@id/tv_name3"
+                android:background="@drawable/payment_check_edittext"
+                android:calendarViewShown="true"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_content_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+            <ImageView
+                    android:id="@+id/rxyearicon"
+                    android:background="@drawable/icon_down"
+                    android:layout_marginRight="@dimen/s10"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_name5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="培养层次"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_name5">
+
+                <Spinner
+                    android:id="@+id/ed_peiyang_cengci"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/s35"
+                    android:layout_marginLeft="@dimen/s5"
+                    android:background="@drawable/payment_check_edittext"
+                    android:padding="@dimen/s10"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/axf_text_content_gray"
+                    android:textColorHint="@color/axf_light_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ed_peiyang_cengci2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/s35"
+                    android:layout_marginLeft="@dimen/s5"
+                    android:background="@drawable/payment_check_edittext"
+                    android:padding="@dimen/s10"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/axf_text_content_gray"
+                    android:textColorHint="@color/axf_light_gray"
+                    android:textSize="15sp" />
+                <ImageView
+                        android:id="@+id/cengciicon"
+                        android:background="@drawable/icon_down"
+                        android:layout_marginRight="@dimen/s10"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_name4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="毕业年份"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ed_tuixue_year"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:layout_toRightOf="@id/tv_name4"
+                android:background="@drawable/payment_check_edittext"
+                android:calendarViewShown="true"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_content_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+            <ImageView
+                    android:id="@+id/yearicon"
+                    android:background="@drawable/icon_down"
+                    android:layout_marginRight="@dimen/s10"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/btn_axf_blue"
+        android:text="确认提交"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s10"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/iv_w_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/w_icon" />
+
+        <TextView
+            android:id="@+id/w_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/s15"
+            android:text="你将开通贵阳银行青春爽心贷服务"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

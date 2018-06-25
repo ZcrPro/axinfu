@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/axf_bg_blue"
+        android:gravity="center">
+
+        <ImageView
+            android:paddingLeft="@dimen/s10"
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s10"
+            android:text="没有找到已缴费项"
+            android:textColor="#208af1" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:direction="both">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/axf_bg_blue"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_centerInParent="true"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="@dimen/s100"
+        android:layout_height="@dimen/s100"
+        android:gravity="center">
+        <com.zhihuianxin.xyaxf.app.view.GifView
+            android:id="@+id/gif_view"
+            android:layout_width="40dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:textColor="@color/axf_text_title_gray"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="fill_parent"
+                 android:background="@drawable/shenghuo_bg"
+                 android:layout_marginLeft="@dimen/s20"
+                 android:layout_marginRight="@dimen/s20"
+                 android:layout_marginTop="@dimen/s20"
+                 android:layout_height="@dimen/s90">
+        <FrameLayout
+                android:id="@+id/old_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_h4" android:textColor="@drawable/text_color_dark"
+                    android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/img"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/s30"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

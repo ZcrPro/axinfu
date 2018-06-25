@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/s10"
+        android:padding="@dimen/s10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="@dimen/s5"
+            android:layout_width="@dimen/s50"
+            android:layout_height="@dimen/s50"
+            android:src="@mipmap/axxyf_succ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名认证已通过" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/btn_axf_blue"
+        android:enabled="true"
+        android:text="立即开通"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/iv_w_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/w_icon"/>
+
+        <TextView
+            android:text="你将开通贵阳银行青春爽心贷服务"
+            android:id="@+id/w_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/s15"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

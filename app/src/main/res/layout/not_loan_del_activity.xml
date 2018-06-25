@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                    android:padding="@dimen/s20"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/axxyf_left" />
+
+                <LinearLayout
+                        android:background="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:id="@+id/ll1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/s20"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/residual_should_repayment_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/axf_common_blue"
+                                android:textSize="22sp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剩余应还"
+                                android:textColor="@color/gray" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剩余本金："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/residual_capital"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款金额："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/loan_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款日期："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/instalment_trade_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款到期日："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/loan_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款天数："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/loan_days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款期数："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/loan_period"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款日利率："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/day_loan_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已出账单："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/outerInterest_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="未出账单："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/current_interest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="预期将产生利息："
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/current_untilLoan_day_interest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:paddingBottom="@dimen/s20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_marginTop="@dimen/s10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="贷款状态："
+                                android:textColor="@color/grgray"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/axf_common_red" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/axxyf_right" />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s38"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/s20"
+                    android:layout_marginLeft="@dimen/s20"
+                    android:layout_marginRight="@dimen/s20"
+                    android:background="@drawable/btn_axf_blue"
+                    android:text="提前还款"
+                    android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

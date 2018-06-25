@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/s10"
+        android:padding="@dimen/s10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="@dimen/s5"
+            android:layout_width="@dimen/s50"
+            android:layout_height="@dimen/s50"
+            android:src="@drawable/guiyang_processing" />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息已提交，请耐心等待审核结果" />
+
+        <TextView
+            android:textColor="@color/axf_common_blue"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请先选择其他方式支付" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:background="@drawable/btn_axf_blue"
+        android:enabled="true"
+        android:text="选择其他方式支付"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

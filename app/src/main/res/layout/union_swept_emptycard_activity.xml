@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_common_blue">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:id="@+id/backview"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@drawable/back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加银行卡"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/pointView"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/s5"
+                    android:layout_toLeftOf="@+id/point2"
+                    android:background="@drawable/union_swep_circle_point" />
+
+                <View
+                    android:id="@+id/point2"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/s5"
+                    android:layout_toLeftOf="@+id/point1"
+                    android:background="@drawable/union_swep_circle_point" />
+
+                <View
+                    android:id="@+id/point1"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s10"
+                    android:background="@drawable/union_swep_circle_point" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/s15"
+            android:layout_weight="0.7"
+            android:background="@drawable/feedback">
+
+            <ImageView
+                android:id="@+id/emptyimg"
+                android:layout_width="180dp"
+                android:layout_height="170dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/s20"
+                android:background="@drawable/union_anfkm_icon" />
+
+            <Button
+                android:id="@+id/next"
+                style="@style/button_text"
+                android:layout_below="@id/emptyimg"
+                android:layout_marginLeft="@dimen/s30"
+                android:layout_marginRight="@dimen/s30"
+                android:layout_marginTop="@dimen/s30"
+                android:background="@drawable/btn_axf_blue"
+                android:text="添加银行卡" />
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:textColor="@color/axf_common_red"
+                android:id="@+id/tips_text"
+                android:layout_margin="@dimen/s5"
+                android:gravity="center"
+                android:layout_below="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="你必须同意相关服务协议，才能添加银行卡" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/s20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/next"
+                android:gravity="center">
+
+                <CheckBox
+                    android:gravity="center"
+                    android:padding="@dimen/s3"
+                    android:button="@drawable/fee_check"
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="同意相关" />
+
+                <TextView
+                    android:id="@+id/link_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:text="服务协议"
+                    android:textColor="@color/axf_common_blue" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.33">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grayBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/pointShowView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/pointClickRecordView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="交易记录"
+                android:textSize="@dimen/s15" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/axf_line_gray" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/pointClickSetView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="设置小额免密"-->
+                <!--android:textSize="@dimen/s15" />-->
+
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0.8dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="@color/axf_line_gray" />-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/pointClickShuomingView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="使用说明"
+                android:textSize="@dimen/s15" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/axf_line_gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pointClickCancelView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消"
+                android:textSize="@dimen/s15" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/axf_line_gray" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-500dp"
+        android:id="@+id/service_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/window_top" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/service_bg" />
+
+        <LinearLayout
+            android:background="@drawable/window_bg_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/xieyi1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector"
+                android:padding="@dimen/s10">
+
+                <TextView
+                    android:id="@+id/content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_h" />
+
+            <RelativeLayout
+                android:id="@+id/xieyi2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector"
+                android:padding="@dimen/s10">
+
+                <TextView
+                    android:id="@+id/content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_marginLeft="@dimen/s20"
+                android:id="@+id/know"
+                style="@style/button_text"
+                android:background="@drawable/btn_axf_blue"
+                android:text="知道了" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

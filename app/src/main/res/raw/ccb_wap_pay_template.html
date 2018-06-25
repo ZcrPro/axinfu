@@ -1,0 +1,11 @@
+<form id="myform" name="payform" method="post" action="%1$s">
+    <input style="display:none" type="hidden" name="json" value="%2$s">
+    <input style="display:none" type="hidden" name="signature" value="%3$s">
+</form>
+
+<script type="text/javascript">
+	function validate(){
+	  document.getElementById('myform').submit();
+	}
+	window.load=validate();
+</script>

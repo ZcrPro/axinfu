@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75">
+
+        <ImageView
+            android:id="@+id/rightIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/s5"
+            android:background="@drawable/upqrpay_success" />
+
+        <TextView
+            android:id="@+id/payforTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rightIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/s10"
+            android:text="向某某某付款"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s15" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payResultTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="支付成功"
+            android:textColor="@color/axf_light_gray"
+            android:textSize="@dimen/s13" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s5"
+            android:text="￥20.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s20" />
+
+        <TextView
+            android:id="@+id/couponid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s5"
+            android:textColor="@color/axf_common_red"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/errormsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/s5"
+            android:textColor="@color/axf_common_red"
+            android:textSize="@dimen/s15"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recyclerview"
+            android:layout_margin="@dimen/s10"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/s20"
+            android:layout_width="@dimen/s250"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/payWay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="付款方式：招商银行信用卡(0001)"
+                android:textSize="@dimen/s13" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/payTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5"
+                android:text="交易时间：2017-01-01"
+                android:textSize="@dimen/s13" />
+
+            <TextView
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:id="@+id/orderno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5"
+                android:text="订单号：20171231313"
+                android:textSize="@dimen/s13" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5"
+                android:textSize="@dimen/s13" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next"
+            style="@style/button_text"
+            android:layout_height="@dimen/s35"
+            android:layout_marginLeft="@dimen/s50"
+            android:layout_marginRight="@dimen/s50"
+            android:layout_marginTop="@dimen/s20"
+            android:background="@drawable/btn_axf_blue"
+            android:gravity="center" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/showpaydetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/s20"
+                android:text="查看交易详情"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/s13"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

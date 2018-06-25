@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s100"
+        android:layout_marginTop="@dimen/s15"
+        android:background="@drawable/btn_bg_selector">
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:text="头像"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_s2" />
+
+        <com.axinfu.basetools.shapeimageview.CustomShapeImageView
+            android:layout_marginRight="11dp"
+            android:id="@+id/avatar_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_toLeftOf="@+id/schoolLogoId"
+            app:borderColor="#000000"
+            app:imageBorderWidth="0dp"
+            android:background="@drawable/defaulf_circle"
+            app:onlyDrawBorder="false"
+            app:shape="circle" />
+
+        <ImageView
+            android:id="@+id/schoolLogoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s10"
+            android:background="@drawable/choose_city_next_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s120"
+        android:layout_marginTop="@dimen/s20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/btn_bg_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s15"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s2"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/nameRightId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/choose_city_next_icon" />
+
+            <TextView
+                android:id="@+id/nickname_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:text=""
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toLeftOf="@+id/nameRightId"
+                android:layout_toStartOf="@+id/nameRightId"
+                android:layout_marginEnd="11dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/s15"
+            android:background="@color/axf_line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s15"
+                android:text="性别"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s2" />
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_toLeftOf="@+id/genderRightId"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/genderRightId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/choose_city_next_icon" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/s15"
+            android:background="@color/axf_line_gray" />
+
+        <RelativeLayout
+            android:id="@+id/mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s15"
+                android:text="手机号"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s2" />
+
+            <TextView
+                android:id="@+id/mobile_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_toLeftOf="@+id/tellRightId"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/tellRightId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/choose_city_next_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/realnameview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/s80"
+            android:layout_marginTop="@dimen/s20"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/btn_bg_selector">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s15"
+                    android:text="姓名"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2"/>
+
+
+            <TextView
+                    android:layout_marginRight="@dimen/s15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/s15"
+                android:background="@color/axf_line_gray" />
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector">
+
+            <TextView
+                    android:id="@+id/idTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s15"
+                    android:text="身份证号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2" />
+
+            <TextView
+                    android:layout_marginRight="@dimen/s15"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/idText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/s15"
+                android:background="@color/axf_line_gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

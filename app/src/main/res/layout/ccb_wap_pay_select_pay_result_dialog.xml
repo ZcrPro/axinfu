@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View style="@style/gray_line_h"/>
+    <FrameLayout
+        android:id="@+id/btn_pay_success"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s50"
+        android:paddingLeft="@dimen/s10" android:paddingRight="@dimen/s10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="是, 查询支付结果"/>
+
+        <ImageView
+            android:layout_width="@dimen/s15" android:layout_height="@dimen/s15"
+            android:src="@drawable/ico_right"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+    <View style="@style/gray_line_h"/>
+    <FrameLayout
+        android:id="@+id/btn_stay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s50"
+        android:paddingLeft="@dimen/s10" android:paddingRight="@dimen/s10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="未支付, 留在该页面"/>
+
+        <ImageView
+            android:layout_width="@dimen/s15" android:layout_height="@dimen/s15"
+            android:src="@drawable/ico_right"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+    <View style="@style/gray_line_h"/>
+    <FrameLayout
+        android:id="@+id/btn_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s50"
+        android:paddingLeft="@dimen/s10" android:paddingRight="@dimen/s10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="反回上一页"/>
+
+        <ImageView
+            android:layout_width="@dimen/s15" android:layout_height="@dimen/s15"
+            android:src="@drawable/ico_right"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+</LinearLayout>

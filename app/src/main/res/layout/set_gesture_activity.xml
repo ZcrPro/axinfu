@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/axf_bg_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.axinfu.basetools.shapeimageview.CustomShapeImageView
+            android:id="@+id/avatar_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:borderColor="@color/axf_common_blue"
+            android:background="@drawable/defaulf_circle"
+            app:imageBorderWidth="1dp"
+            app:onlyDrawBorder="false"
+            app:shape="circle" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s10"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/gesTitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="@dimen/s15"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/s12"
+                    android:textColor="#ff487c"
+                    android:id="@+id/gesContentTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.zhihuianxin.xyaxf.app.verification.UnlockView
+        android:id="@+id/unlock"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/s30"
+        android:layout_marginLeft="@dimen/s30"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/link_finger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s20"
+            android:autoLink="all"
+            android:gravity="right"
+            android:text="指纹解锁"
+            android:textColor="@color/axf_text_content_gray" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/s10"
+            android:textColor="@color/axf_common_blue"
+            android:layout_weight="1"
+            android:id="@+id/link_shoushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s20"
+            android:gravity="left"
+            android:text="手势解锁"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/s10">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/s10">
+
+                    <ImageView
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/s20"
+                        android:layout_marginRight="@dimen/s5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fee_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="校验信息"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll"
+                    android:layout_marginTop="@dimen/s5"
+                    android:paddingLeft="@dimen/s10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户姓名："
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s5"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/user_id_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:layout_marginRight="@dimen/s20"
+                    android:layout_marginTop="@dimen/s10"
+                    android:paddingLeft="@dimen/s10">
+
+                    <TextView
+                        android:text="身份证号："
+                        android:id="@+id/tv_id_card_lable_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_id_card_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s5"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_id_1"
+                    android:layout_marginRight="@dimen/s20"
+                    android:layout_marginTop="@dimen/s10"
+                    android:paddingLeft="@dimen/s10">
+
+                    <TextView
+                        android:id="@+id/tv_id_card_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_id_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s5"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--<View-->
+                    <!--android:layout_marginTop="@dimen/s3"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_marginBottom="@dimen/s3"-->
+                    <!--android:layout_above="@+id/xueji_wenzi"-->
+                    <!--android:id="@+id/xueji_line"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/axf_line_gray" />-->
+
+                <!--<TextView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/xueji_wenzi"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/ll_xueji"-->
+                    <!--android:layout_marginRight="@dimen/s3"-->
+                    <!--android:layout_toLeftOf="@+id/iv_show_more_info"-->
+                    <!--android:text="查看全部信息"-->
+                    <!--android:textColor="@color/axf_common_blue" />-->
+
+                <!--<ImageView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/iv_show_more_info"-->
+                    <!--android:layout_width="@dimen/s15"-->
+                    <!--android:layout_height="@dimen/s15"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/ll_xueji"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="@dimen/s5"-->
+                    <!--android:src="@drawable/btn_expand_down" />-->
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_xueji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_id"
+                    android:layout_marginBottom="@dimen/s5"
+                    android:layout_marginRight="@dimen/s10"
+                    android:layout_marginTop="@dimen/s10"
+                    android:paddingLeft="@dimen/s10">
+
+                    <TextView
+                        android:id="@+id/tv_xueji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/axf_line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/s10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/s10">
+
+                    <ImageView
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/s20"
+                        android:layout_marginRight="@dimen/s5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fee_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="缴费说明"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_fee_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/s10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_yijiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/s10">
+
+                    <ImageView
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/s20"
+                        android:layout_marginRight="@dimen/s5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yijiao_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="溢缴款抵扣"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/line_h" />
+
+                <LinearLayout
+                    android:id="@+id/ll_into_deduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:layout_marginTop="@dimen/s10"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s20"
+                        android:layout_weight="1"
+                        android:text="使用溢缴款抵扣支付金额" />
+
+                    <TextView
+                        android:id="@+id/tv_deduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/axf_common_red" />
+
+                    <TextView
+                        android:id="@+id/tv_deduction_wenzi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未使用"
+                        android:textColor="@color/axf_common_red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_into_decu"
+                        android:layout_width="@dimen/s15"
+                        android:layout_height="@dimen/s15"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_marginRight="@dimen/s10"
+                        android:src="@drawable/choose_city_next_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/s10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/s5"
+                    android:paddingLeft="@dimen/s10"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingTop="@dimen/s5">
+
+                    <ImageView
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/s20"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="@dimen/s5"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fee_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_fee_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center|left"
+                                android:text="缴费缴费缴费缴费缴费缴费缴费缴费缴费缴费缴费"
+                                android:textColor="@color/axf_text_title_gray"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_fee_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/s5"
+                            android:text="学年"
+                            android:textColor="@color/axf_light_gray"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_fee_endate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5"
+                            android:layout_marginTop="@dimen/s5"
+                            android:layout_weight="1"
+                            android:textColor="@color/axf_common_red"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/line_h" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

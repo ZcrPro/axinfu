@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/loading"
+              android:orientation="vertical"
+              android:layout_width="@dimen/s100"
+              android:layout_height="@dimen/s100"
+              android:gravity="center">
+    <com.zhihuianxin.xyaxf.app.view.GifView
+            android:id="@+id/gif_view"
+            android:layout_width="40dp"
+            android:layout_height="60dp"/>
+
+    <TextView
+            android:textColor="@color/axf_text_title_gray"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."/>
+</LinearLayout>

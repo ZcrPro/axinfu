@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:background="@color/axf_bg_blue"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <EditText
+                android:hint="请设置六位数以上的密码"
+                android:layout_marginTop="@dimen/s15"
+                android:inputType="textPassword"
+                android:layout_marginBottom="@dimen/s10"
+                android:id="@+id/pwdid"
+                style="@style/edit_text"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/input_phone_s" />
+
+        <Button
+                android:id="@+id/next"
+                android:text="完成"
+                style="@style/button_text"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/btn_axf_blue"/>
+    </LinearLayout>
+</FrameLayout>

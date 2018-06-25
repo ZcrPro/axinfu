@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginTop="@dimen/s10"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:layout_centerVertical="true"
+                android:id="@+id/tv_account_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                    android:minWidth="@dimen/s17"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <EditText
+                    android:layout_toRightOf="@id/tv_account_no"
+                android:id="@+id/ed_account_no"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:background="@drawable/payment_check_edittext"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_content_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10">
+
+            <TextView
+                    android:layout_centerVertical="true"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <EditText
+                    android:layout_toRightOf="@id/tv_name"
+                android:id="@+id/ed_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:background="@drawable/payment_check_edittext"
+                android:hint="必填"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_content_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:visibility="gone">
+
+            <TextView
+                    android:layout_centerVertical="true"
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="密码"
+                android:textColor="@color/axf_text_title_gray"
+                android:textSize="17sp" />
+
+            <EditText
+                    android:layout_toRightOf="@id/tv_password"
+                android:id="@+id/ed_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s5"
+                android:background="@drawable/payment_check_edittext"
+                android:hint="必填"
+                android:inputType="textPassword"
+                android:padding="@dimen/s10"
+                android:textColor="@color/axf_text_title_gray"
+                android:textColorHint="@color/axf_light_gray"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s20"
+        android:background="@drawable/btn_axf_blue"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

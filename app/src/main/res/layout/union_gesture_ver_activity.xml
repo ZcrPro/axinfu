@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/axf_bg_blue"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/axf_common_blue">
+
+            <ImageView
+                android:id="@+id/back"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="验证手势密码"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_weight="1.5"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <com.axinfu.basetools.shapeimageview.CustomShapeImageView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/touxiang"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:borderColor="#000000"
+                        app:imageBorderWidth="0dp"
+                        android:background="@drawable/defaulf_circle"
+                        app:onlyDrawBorder="false"
+                        app:shape="circle" />
+
+                <TextView
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/s15"
+                        android:textColor="@color/black"
+                        android:id="@+id/gesTitleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_marginTop="@dimen/s10"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/s12"
+                        android:textColor="#ff487c"
+                        android:id="@+id/gesContentTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <com.zhihuianxin.xyaxf.app.verification.UnlockView
+                android:id="@+id/unlock"
+                android:layout_weight="3.4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="fill_parent" android:layout_height="0dp">
+            <TextView
+                    android:id="@+id/verloginPwdtxt"
+                    android:textColor="@color/axf_common_blue"
+                    android:gravity="center"
+                    android:text="验证登录密码"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" android:layout_height="50dp"/>
+            <TextView
+                    android:id="@+id/forgetGesPwdtxt"
+                    android:textColor="@color/axf_common_blue"
+                    android:gravity="center"
+                    android:text="忘记手势密码"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" android:layout_height="50dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+            android:id="@+id/grayBg"
+            android:visibility="gone"
+            android:background="#70000000"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+    <RelativeLayout
+            android:layout_marginTop="-502dp"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="visible"
+            android:id="@+id/backAnimView"
+            android:background="@drawable/window_dinwpwdwrongg"
+            android:layout_width="250dp"
+            android:layout_height="500dp">
+
+
+        <TextView
+                android:text="请输入您的登录密码"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginBottom="@dimen/s5"
+                android:id="@+id/share_title"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/pwdEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:inputType="textPassword"
+                android:hint="请输入登录密码"
+                style="@style/edit_text"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginBottom="@dimen/s10"
+                android:id="@+id/pwdEdit"
+                android:textSize="11sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/okBnt"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"/>
+        <Button
+                android:text="确认"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_axf_blue"
+                style="@style/button_text"
+                android:id="@+id/okBnt"
+                android:textSize="@dimen/s13"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_above="@id/click_focus"
+                android:layout_height="@dimen/s30"/>
+
+        <TextView
+                android:text="取消"
+                android:textColor="@color/axf_common_blue"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:id="@+id/click_focus"
+                android:textSize="@dimen/s13"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

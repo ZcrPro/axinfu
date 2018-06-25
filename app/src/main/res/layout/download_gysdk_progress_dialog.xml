@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="240dp"
+              android:background="@drawable/gy_dialog_bg"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="安心信用付安全插件下载"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/s15"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ProgressBar
+                android:progressDrawable="@drawable/gyprogress"
+                android:id="@+id/progress"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"/>
+        <TextView
+                android:id="@+id/progressindex"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/progress"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View
+                android:layout_marginTop="@dimen/s20"
+                android:layout_width="fill_parent" android:layout_height="1dp"/>
+        <LinearLayout
+                android:id="@+id/dialogclick"
+                android:background="@drawable/dialog_click_bg"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp">
+            <TextView
+                    android:id="@+id/statustxt"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/avatar_view"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/s15"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/s100">
+        <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/s10"
+                android:textSize="@dimen/text_size_s2"
+                android:layout_centerVertical="true"
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:background="@drawable/defaulf_circle"
+                android:layout_toLeftOf="@+id/avatar_next"
+                android:id="@+id/avatarId"
+                android:layout_marginRight="@dimen/s10"
+                android:layout_centerVertical="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+        <ImageView
+                android:id="@+id/avatar_next"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/choose_city_next_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/s20"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:background="@drawable/btn_bg_selector"
+                android:id="@+id/me_stu_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s40">
+            <TextView
+                    android:layout_marginLeft="@dimen/s15"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_s2"
+                    android:text="姓名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:layout_marginRight="@dimen/s15"
+                    android:id="@+id/nameRightId"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/stu_name"
+                    android:layout_marginRight="@dimen/s10"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/nameRightId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:background="@drawable/btn_bg_selector"
+                android:id="@+id/me_stu_ecard"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s40">
+            <TextView
+                    android:layout_marginLeft="@dimen/s15"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2"
+                    android:text="一卡通信息"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                    android:id="@+id/textView"/>
+            <ImageView
+                    android:id="@+id/ecard_next"
+                    android:layout_marginRight="@dimen/s15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <View
+                    android:layout_marginLeft="@dimen/s15"
+                    android:background="@color/axf_line_gray"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:background="@drawable/btn_bg_selector"
+                android:id="@+id/me_stu_fee"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s40">
+            <TextView
+                    android:layout_marginLeft="@dimen/s15"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2"
+                    android:text="缴费信息"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:id="@+id/fee_next"
+                    android:layout_marginRight="@dimen/s15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <View
+                    android:layout_marginLeft="@dimen/s15"
+                    android:background="@color/axf_line_gray"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:background="@drawable/btn_bg_selector"
+            android:id="@+id/me_stu_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/s40">
+
+            <TextView
+                android:layout_marginLeft="@dimen/s15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s2"
+                android:text="银行卡信息"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginRight="@dimen/s10"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/bank_card_next"
+                android:text="奖学金、补助金发放"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bank_card_next"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/choose_city_next_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginLeft="@dimen/s15"
+                android:background="@color/axf_line_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:background="@drawable/btn_bg_selector"
+            android:id="@+id/me_stu_ocp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/s40">
+            <TextView
+                android:layout_marginLeft="@dimen/s15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s2"
+                android:text="一码通信息"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/ocp_next"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/choose_city_next_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_marginLeft="@dimen/s15"
+                android:background="@color/axf_line_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/axf_btn_uncheck_blue">
+
+            <RelativeLayout
+                android:id="@+id/back_icon"
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/s15">
+
+                <ImageView
+                    android:id="@+id/input_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/s150"
+            android:background="@drawable/login_light_bg">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/setPwdAllView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/input_pwd_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/s15"
+                    android:background="@drawable/input_phone_s"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/editText_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/editText"
+                            style="@style/edit_text"
+                            android:layout_toLeftOf="@+id/getver"
+                            android:background="@null"
+                            android:hint="请输入验证码"
+                            android:maxLength="4"
+                            android:numeric="integer" />
+
+                        <TextView
+                            android:id="@+id/getver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/s10"
+                            android:text="获取验证码"
+                            android:textColor="@color/axf_common_blue" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="#ccdcfd" />
+
+                        <RelativeLayout
+                            android:id="@+id/pwdlook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/pwdlookok"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/s10"
+                                android:layout_marginRight="@dimen/s10"
+                                android:background="@drawable/password_show"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/pwdlookun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/s10"
+                                android:layout_marginRight="@dimen/s10"
+                                android:background="@drawable/password_vanish"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/edit_pwd"
+                            style="@style/edit_text"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@id/pwdlook"
+                            android:background="@null"
+                            android:hint="请输入6位以上的密码"
+                            android:inputType="textPassword"
+                            android:numeric="integer" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/setPwdCoverView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/input_pwd_view"
+                    android:layout_alignTop="@id/input_pwd_view"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/verpwd_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/s40"
+                    android:layout_margin="@dimen/s15"
+                    android:background="@drawable/input_phone_s">
+
+                    <EditText
+                        android:id="@+id/editText_ver"
+                        style="@style/edit_text"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/pwdlook_ver"
+                        android:background="@null"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:numeric="integer" />
+
+                    <RelativeLayout
+                        android:id="@+id/pwdlook_ver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/pwdlookok_ver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="@drawable/password_show"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/pwdlookun_ver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s10"
+                            android:layout_marginRight="@dimen/s10"
+                            android:background="@drawable/password_vanish"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/inputEdit"
+                    style="@style/edit_text"
+                    android:layout_margin="@dimen/s15"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入手机号"
+                    android:maxLength="11"
+                    android:numeric="integer" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/next"
+                style="@style/button_text"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/btn_axf_blue"
+                android:enabled="false"
+                android:text="下一步" />
+
+            <TextView
+                android:id="@+id/login_forgetpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginTop="@dimen/s10"
+                android:text="忘记密码？"
+                android:textColor="@color/axf_common_blue"
+                android:visibility="gone" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_debug_version"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/s10"-->
+                <!--android:textColor="@color/axf_light_gray" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/s20"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_marginRight="@dimen/s5"
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/axf_light_gray" />
+
+        <TextView
+            android:id="@+id/check_update_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查更新"
+            android:textColor="@color/axf_common_blue" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/axf_bg_blue"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp">
+        <ImageView
+                android:id="@+id/testImgw"
+                android:layout_centerInParent="true"
+                android:background="@drawable/qrpay_ver_img"
+                android:layout_width="220dp"
+                android:layout_height="40dp"/>
+        <TextView
+                android:textSize="@dimen/s12"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginTop="@dimen/s3"
+                android:textColor="@color/black"
+                android:layout_alignLeft="@id/testImgw"
+                android:text="1.验证身份证                          2.短信验证"
+                android:layout_below="@id/testImgw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <EditText
+            android:maxLength="18"
+            android:inputType="text"
+            android:digits="1234567890xX"
+            android:gravity="center_vertical"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_margin="@dimen/s15"
+            android:hint="请输入身份证号"
+            style="@style/edit_text"
+            android:id="@+id/inputEdit"/>
+
+    <Button
+            android:gravity="center"
+            android:id="@+id/next"
+            android:text="验证"
+            style="@style/button_text"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_marginRight="@dimen/s15"
+            android:background="@drawable/btn_axf_blue"/>
+</LinearLayout>

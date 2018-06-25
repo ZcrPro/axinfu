@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s10"
+        android:gravity="center"
+        android:paddingLeft="@dimen/s10">
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/s15"
+            android:layout_height="@dimen/s15"
+            android:layout_marginRight="@dimen/s10"
+            android:background="@drawable/choose_icon1"
+            android:button="@null"
+            android:enabled="false" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/tv_fee_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:textColor="@color/axf_light_gray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_not_splitable"
+            android:layout_width="@dimen/s100"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_fee_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/s2"
+                android:gravity="center"
+                android:text="元"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_splitable"
+            android:layout_width="@dimen/s100"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:visibility="gone">
+
+            <EditText
+                android:digits="0123456789."
+                android:maxLength="10"
+                android:singleLine="true"
+                android:id="@+id/ed_fee_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ed_fee_amount"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="numberDecimal|textNoSuggestions"
+                android:padding="@dimen/s5"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/s2"
+                android:gravity="center"
+                android:text="元"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_show_fee_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/s10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/s5"
+            android:background="@drawable/fee_should_item_bg"
+            android:padding="@dimen/s10">
+
+            <com.zhihuianxin.xyaxf.app.fee.adapter.MyGridView
+                android:numColumns="2"
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_show_more_info"
+        android:layout_width="@dimen/s15"
+        android:layout_height="@dimen/s15"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/s5"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginTop="@dimen/s5"
+        android:src="@drawable/btn_expand_down" />
+
+    <include layout="@layout/line_h" />
+
+</LinearLayout>

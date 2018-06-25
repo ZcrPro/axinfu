@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:background="@color/axf_bg_blue"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_above="@+id/bottomproview"
+                android:id="@+id/swipe"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_height="fill_parent">
+            <ListView
+                    android:layout_margin="@dimen/s5"
+                    android:divider="@null"
+                    android:id="@+id/bankList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+            </ListView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/s10"
+                android:id="@+id/bottomproview"
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="使用前请详细阅读"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="服务协议"
+                    android:textColor="@color/axf_common_blue"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+            android:id="@+id/grayBg"
+            android:visibility="gone"
+            android:background="#70000000"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+    <RelativeLayout
+            android:layout_marginTop="-502dp"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="visible"
+            android:id="@+id/backAnimView"
+            android:background="@drawable/window_qrdelbankcard_del"
+            android:layout_width="250dp"
+            android:layout_height="500dp">
+        <TextView
+                android:textColor="@color/axf_common_red"
+                android:text="确定要删除?"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginBottom="@dimen/s15"
+                android:id="@+id/share_title"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/click_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button style="@style/button_text"
+                android:id="@+id/click_focus"
+                android:textSize="@dimen/text_size_s3"
+                android:text="确定"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_height="@dimen/s30"
+                android:layout_above="@+id/exit"
+                android:background="@drawable/union_red_btnbg"/>
+        <TextView
+                android:textColor="@color/axf_light_gray"
+                android:textSize="@dimen/text_size_s3"
+                android:id="@+id/exit"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/s15"
+                android:layout_centerHorizontal="true"
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ImageView
+            android:visibility="gone"
+            android:id="@+id/empty_list_icon"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_null"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="-500dp"
+        android:id="@+id/service_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/window_top" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/service_bg" />
+
+        <LinearLayout
+            android:background="@drawable/window_bg_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/xieyi1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector"
+                android:padding="@dimen/s10">
+
+                <TextView
+                    android:id="@+id/content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_h" />
+
+            <RelativeLayout
+                android:id="@+id/xieyi2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_selector"
+                android:padding="@dimen/s10">
+
+                <TextView
+                    android:id="@+id/content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_s2" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/choose_city_next_icon" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_marginTop="@dimen/s10"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_marginLeft="@dimen/s20"
+                android:id="@+id/know"
+                style="@style/button_text"
+                android:background="@drawable/btn_axf_blue"
+                android:text="知道了" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

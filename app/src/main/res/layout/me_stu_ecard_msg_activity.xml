@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/me_stu_card_id"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s40"
+        android:layout_marginTop="@dimen/s10"
+        android:background="@drawable/btn_bg_selector">
+
+        <TextView
+            android:id="@+id/ver_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/s15"/>
+
+        <TextView
+            android:id="@+id/ver_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_toLeftOf="@+id/accountNextIcon" />
+
+        <ImageView
+            android:id="@+id/accountNextIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/s15"
+            android:background="@drawable/choose_city_next_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/s15"
+        android:layout_marginRight="@dimen/s15"
+        android:background="@color/axf_line_gray" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+        <ImageView
+                android:id="@+id/icon1"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wechat_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:textColor="@color/black"
+                android:text="微信支付"
+                android:layout_marginTop="@dimen/s6"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_toRightOf="@id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:textSize="@dimen/s9"
+                android:layout_alignParentBottom="true"
+                android:text="微信安全支付"
+                android:layout_marginBottom="@dimen/s6"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_toRightOf="@id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:layout_alignParentBottom="true"
+                android:background="#d3d3d3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

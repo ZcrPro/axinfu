@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AXUI/AXUI.iml" filepath="$PROJECT_DIR$/AXUI/AXUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AXUtil/AXUtil.iml" filepath="$PROJECT_DIR$/AXUtil/AXUtil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AxPay/AxPay.iml" filepath="$PROJECT_DIR$/AxPay/AxPay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaseTools/BaseTools.iml" filepath="$PROJECT_DIR$/BaseTools/BaseTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModelLib/ModelLib.iml" filepath="$PROJECT_DIR$/ModelLib/ModelLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu.iml" filepath="$PROJECT_DIR$/axinfu.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu-lib/axinfu-lib.iml" filepath="$PROJECT_DIR$/axinfu-lib/axinfu-lib.iml" />

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_bg_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/s30"
+        android:background="@color/axf_bg_blue"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/axf_login_msg_title_bg">
+
+            <TextView
+                android:id="@+id/time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:lines="1"
+                android:maxHeight="25dp"
+                android:maxWidth="130dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_s4" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msg_main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/axf_while_btn">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginTop="@dimen/s10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_h1" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginTop="@dimen/s3"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginTop="@dimen/s5"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/axf_light_gray" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/s10"
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:layout_marginTop="@dimen/s3"
+            android:text="更多>>"
+            android:textColor="@color/axf_common_blue"
+             />
+
+        <View
+            android:id="@+id/split"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/tv_more"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/goUrl_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/split"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/axf_line_gray" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s10" />
+
+            <TextView
+                android:id="@+id/goUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/text_size_s1" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/s10" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

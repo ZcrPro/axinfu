@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/axf_bg_blue"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/axf_common_blue">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="@dimen/s12"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="一卡通"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="@dimen/s12"
+                android:src="@drawable/more_icon"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefreshlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:direction="both">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s200">
+
+                        <ImageView
+                            android:id="@+id/iv_bg_ecard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/blue_card" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/s20"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_card_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/axf_bg_blue"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_card_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/s10"
+                                android:textColor="@color/axf_bg_blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_call_lost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/s20"
+                            android:layout_marginRight="@dimen/s25"
+                            android:layout_marginTop="@dimen/s20"
+                            android:padding="@dimen/s5"
+                            android:src="@drawable/call_lost" />
+
+                        <TextView
+                            android:id="@+id/tv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/s35"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:typeface="sans" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/s10"
+                        android:paddingLeft="@dimen/s10"
+                        android:paddingRight="@dimen/s10">
+
+                        <RadioGroup
+                            android:id="@+id/radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rd_rechage_amount_1"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/s40"
+                                android:layout_marginRight="@dimen/s5"
+                                android:layout_weight="1"
+                                android:background="@drawable/ecard_amount_selected"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:textColor="@color/axf_common_blue"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rd_rechage_amount_2"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/s40"
+                                android:layout_marginRight="@dimen/s5"
+                                android:layout_weight="1"
+                                android:background="@drawable/ecard_amount_selected"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:textColor="@color/axf_common_blue"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rd_rechage_amount_3"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/s40"
+                                android:layout_marginRight="@dimen/s5"
+                                android:layout_weight="1"
+                                android:background="@drawable/ecard_amount_selected"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:textColor="@color/axf_common_blue"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rd_rechage_amount_4"
+                                android:layout_width="@dimen/s100"
+                                android:layout_height="@dimen/s40"
+                                android:layout_marginRight="@dimen/s5"
+                                android:layout_weight="1"
+                                android:background="@drawable/ecard_amount_selected"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:textColor="@color/axf_common_blue"
+                                android:textSize="13sp"
+                                android:visibility="gone" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/ed_payment_num"
+                            android:layout_width="@dimen/s100"
+                            android:layout_height="@dimen/s40"
+                            android:background="@drawable/ecard_amount_ed_selected"
+                            android:gravity="center"
+                            android:hint="1-300元任意金额"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textColorHint="@color/axf_light_gray"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s38"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_marginRight="@dimen/s10"
+                        android:background="@drawable/btn_axf_blue"
+                        android:text="充值"
+                        android:textColor="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/s5"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/iv_w_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/w_red_icon"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/w_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/s15"
+                            android:textColor="@color/axf_common_red"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cloud_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_oder_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_oder_amt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_oder_status_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/s10"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_oder_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/s20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_oder_amt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_oder_status_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/s10"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.zhihuianxin.xyaxf.app.customview.OverScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s50"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.1">
+
+                <LinearLayout
+                    android:id="@+id/ll_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pull_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="@dimen/s2"
+                        android:src="@drawable/pull_icon" />
+
+                    <com.zhihuianxin.xyaxf.app.customview.shimmer.ShimmerTextView
+                        android:id="@+id/tv_shimmer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上拉查看更多付款记录"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </com.zhihuianxin.xyaxf.app.customview.OverScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grayBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/neePasswordView"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="-500dp"
+        android:background="@drawable/window"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ed_re_password"
+            android:layout_centerHorizontal="true"
+            android:text="你的密码可能已修改"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_s3" />
+
+        <EditText
+            android:id="@+id/ed_re_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/click_errorbtn"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s35"
+            android:layout_marginRight="@dimen/s35"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@drawable/ecard_edittext_focused"
+            android:hint="请重新输入一卡通密码"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/s5"
+            android:paddingRight="@dimen/s5"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_s3" />
+
+        <Button
+            android:id="@+id/click_errorbtn"
+            style="@style/button_text"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/exit"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s25"
+            android:layout_marginRight="@dimen/s25"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@drawable/btn_axf_blue"
+            android:text="确认"
+            android:textSize="@dimen/text_size_s3" />
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/s15"
+            android:text="取消"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="@dimen/text_size_s3" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mx_neePasswordView"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="-500dp"
+        android:background="@drawable/window"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mx_ed_re_password"
+            android:layout_centerHorizontal="true"
+            android:text="验证一卡通密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_s3" />
+
+        <EditText
+            android:id="@+id/mx_ed_re_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/mx_click_errorbtn"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s35"
+            android:layout_marginRight="@dimen/s35"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@drawable/ecard_edittext_focused"
+            android:hint="请输入一卡通密码"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/s5"
+            android:paddingRight="@dimen/s5"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_s3" />
+
+        <Button
+            android:id="@+id/mx_click_errorbtn"
+            style="@style/button_text"
+            android:layout_height="@dimen/s25"
+            android:layout_above="@+id/mx_exit"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s25"
+            android:layout_marginRight="@dimen/s25"
+            android:layout_marginTop="@dimen/s5"
+            android:background="@drawable/btn_axf_blue"
+            android:text="确认"
+            android:textSize="@dimen/text_size_s3" />
+
+        <TextView
+            android:id="@+id/mx_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/s15"
+            android:text="取消"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="@dimen/text_size_s3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lostView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:layout_marginTop="-500dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/window_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/window_lost" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/window_bg_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ed_lost_password"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/s5"
+                android:gravity="center"
+                android:text="你正在挂失一卡通"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s3" />
+
+            <EditText
+                android:id="@+id/ed_lost_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s25"
+                android:layout_above="@+id/btn_lost_ok"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s35"
+                android:layout_marginRight="@dimen/s35"
+                android:background="@drawable/ecard_edittext_focused"
+                android:hint="请重新输入一卡通密码"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/s5"
+                android:paddingRight="@dimen/s5"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/tv_lost_err_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/s5"
+                android:textColor="@color/axf_common_red"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_lost_ok"
+                style="@style/button_text"
+                android:layout_height="@dimen/s25"
+                android:layout_above="@+id/btn_cancel"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s25"
+                android:layout_marginRight="@dimen/s25"
+                android:layout_marginTop="@dimen/s5"
+                android:background="@drawable/btn_axf_blue"
+                android:text="确认"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/s15"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/text_size_s3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/not_lostView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:layout_marginTop="-500dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/window_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/window_found" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/window_bg_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/s5"
+                android:gravity="center"
+                android:text="你正在解除挂失状态"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s3" />
+
+            <EditText
+                android:id="@+id/ed_not_lost_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s25"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s35"
+                android:layout_marginRight="@dimen/s35"
+                android:background="@drawable/ecard_edittext_focused"
+                android:hint="请重新输入一卡通密码"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/s5"
+                android:paddingRight="@dimen/s5"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/tv_not_lost_err_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/s5"
+                android:textColor="@color/axf_common_red"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_not_lost_ok"
+                style="@style/button_text"
+                android:layout_height="@dimen/s25"
+                android:layout_above="@+id/btn_not_cancel"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s25"
+                android:layout_marginRight="@dimen/s25"
+                android:layout_marginTop="@dimen/s5"
+                android:background="@drawable/btn_axf_blue"
+                android:text="确认"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/btn_not_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/s15"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/text_size_s3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

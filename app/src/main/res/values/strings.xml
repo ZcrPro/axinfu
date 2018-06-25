@@ -1,3 +1,23 @@
-<resources>
+<resources
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
     <string name="app_name">校园安心付</string>
+
+    <string name="bj">北京</string>
+    <string name="bj_">宝鸡</string>
+    <string name="cd">成都</string>
+    <string name="xa">西安</string>
+    <string name="nj">南京</string>
+
+    <string name="fee1">一卡通充值</string>
+    <string name="fee2">小卖部一卡通充值</string>
+    <string name="fee3">美味街川味</string>
+    <string name="fee4">学费</string>
+    <string name="fee5">食堂一卡通消费</string>
+
+    <string name="bj_d">北京大学</string>
+    <string name="bj_wl">宝鸡文理学院</string>
+    <string name="cd_">成都大学</string>
+    <string name="xa_">西安理工大学</string>
+    <string name="nj_">南京大学</string>
 </resources>

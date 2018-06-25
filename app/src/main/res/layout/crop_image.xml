@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <com.edmodo.cropper.CropImageView
+            android:id="@+id/crop_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    <Button
+            android:text="确定"
+            style="@style/button_text"
+            android:background="@drawable/btn_axf_blue"
+            android:layout_gravity="bottom"
+            android:onClick="onBtnNextStepClick"/>
+</FrameLayout>

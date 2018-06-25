@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/axf_bg_blue"
+            android:gravity="center">
+
+        <ImageView
+                android:paddingLeft="@dimen/s10"
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_null" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_null"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/s10"
+                android:text="暂无历史账单"
+                android:textColor="#208af1" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhihuianxin.xyaxf.app.view.SwipeRefreshAndLoadMoreLayoutStick
+            android:layout_weight="1"
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:direction="both">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5" />
+
+        </com.zhihuianxin.xyaxf.app.view.SwipeRefreshAndLoadMoreLayoutStick>
+
+        <Button
+                android:visibility="gone"
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s38"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s20"
+            android:layout_marginRight="@dimen/s20"
+            android:layout_marginTop="@dimen/s30"
+            android:background="@drawable/btn_axf_blue"
+            android:text="如何还款？"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

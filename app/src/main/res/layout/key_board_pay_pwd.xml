@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              android:background="@color/axf_bg_blue">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+        <TextView
+                android:id="@+id/text_title"
+                android:layout_margin="@dimen/s10"
+                android:textColor="@color/black"
+                android:text="请输入原密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <com.zhihuianxin.xyaxf.app.view.PasswordInputEdtView
+                android:layout_below="@id/text_title"
+                android:id="@+id/edt"
+                app:showStock="false"
+                app:pwdType="XINGHAO"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_marginLeft="@dimen/s20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/errortxt"
+                android:textColor="@color/axf_common_red"
+                android:layout_marginTop="@dimen/s20"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/s30"
+                android:layout_below="@id/edt"
+                android:id="@+id/next"
+                android:text="下一步"
+                android:enabled="false"
+                style="@style/button_text"
+                android:layout_height="@dimen/s35"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/btn_axf_blue"/>
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/forget_pwd"
+                android:layout_marginTop="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/next"
+                android:textSize="@dimen/s15"
+                android:text="忘记密码?"
+                android:textColor="@color/axf_common_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <com.zhihuianxin.xyaxf.app.view.KeyBoardPwdView
+            android:layout_weight="0.7"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/am_nkv_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grayBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="-500dp"
+        android:id="@+id/neePasswordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/window_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_alert_header_limit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/window_bg_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ed_lost_password"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/s10"
+                android:gravity="center"
+                android:text="支付密码设置成功"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:layout_marginRight="@dimen/s10"
+                android:layout_marginLeft="@dimen/s10"
+                android:id="@+id/tv_content"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="@dimen/text_size_s4" />
+
+            <TextView
+                android:id="@+id/tv_lost_err_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/s5"
+                android:textColor="@color/axf_common_red"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_lost_ok"
+                style="@style/button_text"
+                android:layout_height="@dimen/s25"
+                android:layout_above="@+id/btn_cancel"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s25"
+                android:layout_marginRight="@dimen/s25"
+                android:layout_marginTop="@dimen/s5"
+                android:background="@drawable/btn_axf_blue"
+                android:text="好的"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/s15"
+                android:gravity="center"
+                android:text="关闭小额免密"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/text_size_s3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

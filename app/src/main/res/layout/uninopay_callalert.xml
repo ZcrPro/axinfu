@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lostView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/s200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/window_top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s100"
+            android:scaleType="fitXY"
+            android:src="@mipmap/window_qr_pay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/window_bg_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ed_lost_password"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/s10"
+                android:gravity="center"
+                android:text="请联系校园安心付客服修改姓名"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="400-028-1024"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/tv_lost_err_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/s5"
+                android:textColor="@color/axf_common_red"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/next"
+                style="@style/button_text"
+                android:layout_height="@dimen/s25"
+                android:layout_above="@+id/btn_cancel"
+                android:layout_marginBottom="@dimen/s5"
+                android:layout_marginLeft="@dimen/s25"
+                android:layout_marginRight="@dimen/s25"
+                android:layout_marginTop="@dimen/s5"
+                android:background="@drawable/btn_axf_blue"
+                android:text="拨打电话"
+                android:textSize="@dimen/text_size_s3" />
+
+            <TextView
+                android:id="@+id/diss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/s15"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/text_size_s3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

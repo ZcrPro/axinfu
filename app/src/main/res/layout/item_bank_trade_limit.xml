@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/s50"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s50"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="@dimen/s40"
+            android:layout_height="@dimen/s40"
+            android:layout_gravity="center"
+            android:padding="@dimen/s12"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="@dimen/s90"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="中国建设银行"
+            android:textColor="@color/axf_text_content_gray"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_trade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/s5"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="单日限额:1000,每笔限额500"
+            android:textColor="@color/axf_text_content_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View style="@style/gray_line_h" />
+
+</LinearLayout>

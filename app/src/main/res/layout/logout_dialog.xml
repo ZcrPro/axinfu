@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="230dp"
+              android:background="@drawable/gy_dialog_bg"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_width="230dp" android:layout_height="120dp">
+        <TextView
+                android:layout_marginTop="45dp"
+                android:layout_centerHorizontal="true"
+                android:text="确认退出"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+            <LinearLayout
+                    android:id="@+id/logout"
+                    android:background="@drawable/btn_bg_selector"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:gravity="center_horizontal"
+                        android:text="退出"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/logcancel"
+                    android:background="@drawable/btn_bg_selector"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:gravity="center_horizontal"
+                        android:text="取消"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="axf_common_blue">#208af0</color>
+    <color name="axf_text_uncheck_blue">#b5d8fe</color>
+    <color name="axf_btn_uncheck_blue">#6baefd</color>
+    <color name="axf_bg_blue">#e5eefd</color>
+    <color name="axf_tran">#00000000</color>
+
+    <color name="axf_light_gray">#9a9a9a</color>                    <!--淡灰色-->
+    <color name="axf_text_content_gray">#666666</color>             <!--文字内容-->
+    <color name="axf_text_title_gray">#333333</color>               <!--文字标题-->
+    <color name="axf_btn_uncheck_gray">#dae3ec</color>              <!--未点击的按钮背景-->
+    <color name="axf_line_gray">#f2f2f2</color>
+
+    <color name="axf_common_red">#ff4867</color>
+
+    <color name="axf_common_green">#4ed173</color>
+
+    <color name="press_cover_light">#19ffffff</color>
+    <color name="press_cover_dark">#19000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="axf_important_notice_bg">#70000000</color>
+    <color name="warn_text">#ff4867</color>
+    <color name="warn_bg">#FDF9CA</color>
+    <color name="grgray">#686868</color>
+    <color name="bak">#45484D</color>
+</resources>

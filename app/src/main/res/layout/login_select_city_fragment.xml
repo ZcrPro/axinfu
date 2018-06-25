@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/search_view"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/axf_common_blue">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/s7"
+                    android:layout_toLeftOf="@+id/search_cancel"
+                    android:background="@drawable/bg_login_search"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/s5"
+                        android:background="@drawable/search_icon" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <EditText
+                            android:id="@+id/search_edit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/s5"
+                            android:layout_toLeftOf="@+id/search_clear"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:hint="输入城市名、拼音或首字母查询"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="@dimen/text_size_s4" />
+
+                        <ImageView
+                            android:id="@+id/search_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/s5"
+                            android:background="@drawable/search_delete_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/search_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s10"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_s1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bar"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/axf_common_blue">
+
+                <TextView
+                    android:id="@id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="选择"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s15"
+                    android:background="@drawable/search_icon" />
+
+                <RelativeLayout
+                    android:id="@+id/back_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s15">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/back" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@color/axf_bg_blue"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <FrameLayout
+                android:id="@+id/contentView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.gjiazhe.wavesidebar.WaveSideBar
+                    android:id="@+id/side_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sidebar_text_color="@color/axf_text_content_gray"/>
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swiperefreshlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/s10"
+                    android:background="@color/white"
+                    app:direction="both">
+
+                    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                        android:id="@+id/stickListView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="#cdcdcd"/>
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/graySearchBg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#70000000"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/search_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="0.7dp"
+                android:visibility="gone">
+
+            </ListView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grayBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/backAnimView"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="-502dp"
+        android:background="@drawable/window"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/click_errorbtn"
+            android:layout_centerHorizontal="true"
+            android:text="你还未完成学校选择"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_s1" />
+
+        <Button
+            android:id="@+id/click_errorbtn"
+            style="@style/button_text"
+            android:layout_height="@dimen/s30"
+            android:layout_above="@+id/exit_view"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_marginRight="@dimen/s15"
+            android:layout_marginTop="@dimen/s20"
+            android:background="@drawable/btn_axf_blue"
+            android:text="点错啦"
+            android:textSize="@dimen/text_size_s3" />
+
+        <RelativeLayout
+            android:id="@+id/exit_view"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="继续退出"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/text_size_s3" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

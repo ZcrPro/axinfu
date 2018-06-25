@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/axf_bg_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s15"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pro1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s15"
+                    android:text="校园安心付银联二维码服务协议"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s15"
+                    android:background="@drawable/choose_city_next_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pro2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s15"
+                    android:text="校园安心付银行卡快捷支付服务协议"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s15"
+                    android:background="@drawable/choose_city_next_icon" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next"
+            style="@style/button_text"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_marginRight="@dimen/s15"
+            android:layout_marginTop="@dimen/s15"
+            android:background="@drawable/btn_axf_blue"
+            android:text="同意" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/proDetailView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#70000000"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/s20"
+            android:background="@color/white">
+
+            <TextView
+                android:paddingRight="@dimen/s5"
+                android:paddingLeft="@dimen/s5"
+                android:id="@+id/lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/s20"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_weight="1"
+                android:id="@+id/scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:padding="@dimen/s20" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/closeProDetailImg"
+                style="@style/button_text"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/s20"
+                android:layout_marginLeft="@dimen/s30"
+                android:layout_marginRight="@dimen/s30"
+                android:background="@drawable/btn_axf_blue"
+                android:text="好的" />
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/closeProDetailImg"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/upqr_pay_error"-->
+        <!--android:layout_width="30dp" android:layout_height="30dp"/>-->
+
+
+    </LinearLayout>
+</FrameLayout>

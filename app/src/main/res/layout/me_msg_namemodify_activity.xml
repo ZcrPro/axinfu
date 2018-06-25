@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+            android:maxLength="15"
+            android:id="@+id/nickname_edit"
+            android:hint="昵称"
+            android:layout_margin="@dimen/s15"
+            style="@style/edit_text"/>
+
+    <Button
+            android:id="@+id/submit"
+            style="@style/button_text"
+            android:text="完成"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_marginRight="@dimen/s15"
+            android:background="@drawable/btn_axf_blue"/>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/s5"
+        android:layout_marginLeft="@dimen/s10"
+        android:layout_marginRight="@dimen/s10"
+        android:layout_marginTop="@dimen/s10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/s10">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/s15"
+            android:layout_height="@dimen/s15"
+            android:layout_marginRight="@dimen/s5"
+            android:background="@drawable/choose_icon2"
+            android:button="@null"
+            android:enabled="false" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_fee_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:textColor="@color/axf_light_gray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_not_splitable"
+            android:layout_width="@dimen/s100"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10">
+
+            <TextView
+                android:id="@+id/tv_fee_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/s2"
+                android:gravity="center"
+                android:text="元"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_splitable"
+            android:layout_width="@dimen/s100"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/ed_fee_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ed_fee_amount"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="text|textNoSuggestions"
+                android:maxLength="10"
+                android:padding="@dimen/s5"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/s2"
+                android:gravity="center"
+                android:text="元"
+                android:textColor="@color/axf_text_content_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:padding="@dimen/s5"
+            android:id="@+id/iv_show_more_info"
+            android:layout_width="@dimen/s25"
+            android:layout_height="@dimen/s25"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="@dimen/s5"
+            android:layout_marginLeft="@dimen/s5"
+            android:src="@drawable/btn_expand_down"
+            android:visibility="gone"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_below="@+id/ss"
+        android:id="@+id/ll_show_fee_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/s10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/s5"
+            android:background="@drawable/fee_should_item_bg"
+            android:padding="@dimen/s10">
+
+            <com.zhihuianxin.xyaxf.app.fee.adapter.MyGridView
+                android:numColumns="2"
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/line_h" />
+
+    <RelativeLayout
+        android:id="@+id/view_ck"
+        android:layout_width="@dimen/s50"
+        android:layout_height="@dimen/s35" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="@mipmap/lock_window"
+        android:layout_width="@dimen/s270"
+        android:layout_height="@dimen/s270"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/s270"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="你可以向收银员确认支付结果,或者在“我的-交易记录”中查询"
+            android:id="@+id/contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s10"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:layout_marginTop="@dimen/s70"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/s5"
+            android:textColor="@color/axf_common_red"
+            android:textSize="@dimen/text_size_s2" />
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s10"
+            android:layout_marginRight="@dimen/s10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/payed"
+                android:layout_width="@dimen/s155"
+                android:layout_height="@dimen/s40"
+                android:background="@drawable/btn_axf_blue"
+                android:gravity="center"
+                android:text="我已支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s13" />
+
+            <Button
+                android:id="@+id/re_pay"
+                android:layout_width="@dimen/s155"
+                android:layout_height="@dimen/s40"
+                android:layout_margin="@dimen/s5"
+                android:background="@drawable/btn_axf_blue"
+                android:gravity="center"
+                android:text="重新支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s13" />
+
+            <Button
+                android:id="@+id/load_payed_list"
+                android:layout_width="@dimen/s155"
+                android:layout_height="wrap_content"
+                android:background="@drawable/union_blueslide_btnbg"
+                android:gravity="center"
+                android:text="查询交易记录"
+                android:textColor="@color/axf_common_blue"
+                android:textSize="@dimen/s13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

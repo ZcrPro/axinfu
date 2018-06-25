@@ -1,0 +1,61 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_centerInParent="true"
+    android:layout_margin="@dimen/s5"
+    android:id="@+id/rl"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/s10">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/s5"
+            android:layout_marginRight="@dimen/s5"
+            android:src="@drawable/bank_card_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/s15"
+            android:layout_height="@dimen/s15"
+            android:background="@drawable/icon_check_box_red_unch"
+            android:button="@null"
+            android:enabled="false" />
+
+        <TextView
+            android:text="32432432432"
+            android:gravity="right|center"
+            android:id="@+id/card_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/s10"
+            android:textColor="@color/axf_common_blue"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

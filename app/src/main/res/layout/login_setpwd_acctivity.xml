@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:background="@drawable/login_light_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/s150">
+        <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/picture2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:background="@drawable/input_phone_s"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/s15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/editText_layout"
+                        android:layout_height="0dp">
+            <EditText
+                    android:layout_toLeftOf="@+id/getver"
+                    android:maxLength="4"
+                    android:hint="请输入验证码"
+                    android:background="@null"
+                    android:numeric="integer"
+                    style="@style/edit_text"
+                    android:id="@+id/editText"/>
+            <TextView
+                    android:id="@+id/getver"
+                    android:textColor="@color/axf_common_blue"
+                    android:text="获取验证码"
+                    android:layout_marginRight="@dimen/s10"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+            <View
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:layout_marginRight="@dimen/s10"
+                    android:background="#ccdcfd"
+                    android:layout_width="fill_parent" android:layout_height="0.7dp"/>
+
+            <RelativeLayout
+                    android:id="@+id/pwdlook"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/pwdlookok"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_marginRight="@dimen/s10"
+                        android:visibility="gone"
+                        android:background="@drawable/password_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:id="@+id/pwdlookun"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_marginRight="@dimen/s10"
+                        android:visibility="visible"
+                        android:background="@drawable/password_vanish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <EditText
+                    android:layout_toLeftOf="@id/pwdlook"
+                    android:hint="请输入6位以上的密码"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:numeric="integer"
+                    style="@style/edit_text"
+                    android:id="@+id/edit_pwd" android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+            android:enabled="false"
+            android:id="@+id/next"
+            android:text="完成"
+            style="@style/button_text"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_marginRight="@dimen/s15"
+            android:background="@drawable/btn_axf_blue"/>
+</LinearLayout>

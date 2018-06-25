@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:id="@+id/ll_axinfu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/s10"
+            android:layout_height="@dimen/s10"
+            android:background="@color/axf_bg_blue" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@color/home_grid_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/s10"
+            android:layout_height="@dimen/s10"
+            android:background="@color/axf_bg_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_life"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s10"
+            android:background="@color/axf_bg_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/s10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/axf_line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/img_home"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/axinfu_icon_nor" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/s3"
+                        android:layout_toRightOf="@id/img_home"
+                        android:gravity="center"
+                        android:text="安心付"
+                        android:textColor="@color/axf_text_title_gray"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/msg_point"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="@dimen/s5"
+                        android:layout_toRightOf="@id/tv_home"
+                        android:background="@drawable/msg_point"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_life"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/img_life"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/life_icon_dis" />
+
+                    <TextView
+                        android:id="@+id/tv_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/s3"
+                        android:layout_toRightOf="@id/img_life"
+                        android:gravity="center"
+                        android:text="生活"
+                        android:textColor="@color/axf_text_content_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_code"
+        android:layout_width="@dimen/s50"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="@dimen/s50"
+            android:layout_height="@dimen/s50"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/home_tab_code" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

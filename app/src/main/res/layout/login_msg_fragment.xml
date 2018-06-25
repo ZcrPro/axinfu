@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <ImageView
+                android:id="@+id/empty_img"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:visibility="gone"
+                android:textColor="@color/axf_common_blue"
+                android:text="暂无数据"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/empty_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <com.zhihuianxin.xyaxf.app.view.SwipeRefreshAndLoadMoreLayout
+            android:layout_margin="@dimen/s10"
+            android:id="@+id/swipeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:direction="both">
+        <ListView
+                android:id="@+id/sListView"
+                android:listSelector="#00000000"
+                android:divider="#00000000"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+        </ListView>
+    </com.zhihuianxin.xyaxf.app.view.SwipeRefreshAndLoadMoreLayout>
+</FrameLayout>

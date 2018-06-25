@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+            android:padding="@dimen/s5"
+            android:gravity="top"
+            android:hint="请输入反馈内容"
+            android:layout_margin="15dp"
+            android:background="@drawable/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:textSize="@dimen/text_size_s3"
+            android:id="@+id/feedback_value"/>
+    <LinearLayout
+            android:layout_marginBottom="@dimen/s15"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/photo_list"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <ImageView
+                android:layout_margin="@dimen/s5"
+                android:id="@+id/add_photo"
+                android:background="@drawable/add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+            android:enabled="false"
+            android:id="@+id/next"
+            android:text="完成"
+            style="@style/button_text"
+            android:layout_marginLeft="@dimen/s15"
+            android:layout_marginRight="@dimen/s15"
+            android:background="@drawable/btn_axf_blue"/>
+
+</LinearLayout>

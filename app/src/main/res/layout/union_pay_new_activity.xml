@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/axf_bg_blue"
+    android:id="@+id/rl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/amountviewid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/s5"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/s10"
+                    android:layout_marginTop="@dimen/s10"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/topimage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/payFor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="123"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s18" />
+
+                </LinearLayout>
+
+                <!--<TextView-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:id="@+id/remarkidtext"-->
+                <!--android:textSize="@dimen/s9"-->
+                <!--android:textColor="@color/axf_common_red"-->
+                <!--android:text="我是留言我是留言我是留言我是留言"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/amount2View"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amountviewid"
+                android:paddingBottom="@dimen/s10"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/limitAmtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s35" />
+
+                    <TextView
+                        android:id="@+id/payAmount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="123"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s27" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/unlimitAmtView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:layout_marginRight="@dimen/s10"
+                    android:layout_marginTop="@dimen/s5"
+                    android:background="@drawable/input_phone_s"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="￥"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s33" />
+
+                    <EditText
+                        android:id="@+id/unlimitAmtEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/s5"
+                        android:background="@null"
+                        android:textSize="@dimen/s23" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/s5"
+                android:layout_below="@+id/amount2View"
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/s5"
+                android:id="@+id/remarkViewid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerview"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/remarkContentTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/s10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s12"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:maxLength="50"
+                    android:id="@+id/tv_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/s10"
+                    android:hint="添加备注(50字以内)"
+                    android:textColor="@color/axf_light_gray"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/remarkdeteilText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/s10"
+                    android:text="备注详情"
+                    android:textColor="@color/axf_common_blue"
+                    android:textSize="@dimen/s12"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/next"
+                style="@style/button_text"
+                android:layout_height="@dimen/s35"
+                android:layout_below="@id/remarkViewid"
+                android:layout_marginLeft="@dimen/s20"
+                android:layout_marginRight="@dimen/s20"
+                android:layout_marginTop="@dimen/s10"
+                android:background="@drawable/btn_axf_blue"
+                android:gravity="center"
+                android:text="确认付款" />
+
+        </RelativeLayout>
+
+        <com.zhihuianxin.xyaxf.app.view.KeyBoardPwdPointView
+            android:id="@+id/am_nkv_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.5"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cashier"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="#ffffff"></FrameLayout>
+    </LinearLayout>
+</FrameLayout>

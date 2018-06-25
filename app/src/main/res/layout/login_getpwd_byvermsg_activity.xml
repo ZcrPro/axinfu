@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/axf_bg_blue"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:id="@+id/toplinerviewid"
+                android:background="@drawable/get_pwd_ver_bg"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/s15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/nameviewid"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText
+                        android:background="@null"
+                        style="@style/edit_text"
+                        android:id="@+id/cancelname"/>
+                <View
+                        android:layout_marginTop="@dimen/s40"
+                        android:background="@color/axf_bg_blue"
+                        android:layout_marginRight="@dimen/s10"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_width="fill_parent" android:layout_height="0.8dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/xuehaoviewid"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText
+                        android:background="@null"
+                        style="@style/edit_text"
+                        android:id="@+id/cancelxuehao"/>
+
+                <View
+                        android:layout_marginTop="@dimen/s40"
+                        android:background="@color/axf_bg_blue"
+                        android:layout_marginRight="@dimen/s10"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_width="fill_parent" android:layout_height="0.8dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/idviewid"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText
+                        android:background="@null"
+                        style="@style/edit_text"
+                        android:id="@+id/cancelid"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/bankcardtipstxt"
+                android:layout_marginTop="@dimen/s15"
+                android:layout_marginBottom="@dimen/s10"
+                android:layout_marginLeft="@dimen/s15"
+                android:textSize="@dimen/s9"
+                android:textColor="@color/axf_light_gray"
+                android:text="请输入任一绑定银行卡号或信用付账号的后4位"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+                android:maxLength="4"
+                android:digits="1234567890"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/s10"
+                android:id="@+id/bankid"
+                style="@style/edit_text"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/input_phone_s" />
+
+        <Button
+                android:id="@+id/next"
+                android:text="完成"
+                style="@style/button_text"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:background="@drawable/btn_axf_blue"/>
+    </LinearLayout>
+    <View
+            android:id="@+id/grayBg"
+            android:visibility="gone"
+            android:background="#70000000"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+    <RelativeLayout
+            android:layout_marginTop="-502dp"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="visible"
+            android:id="@+id/backAnimView"
+            android:background="@drawable/window_dinwpwdwrongg"
+            android:layout_width="250dp"
+            android:layout_height="500dp">
+        <TextView
+                android:text="身份核实失败"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginBottom="@dimen/s5"
+                android:id="@+id/share_title"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/tel_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text=""
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginBottom="@dimen/s15"
+                android:id="@+id/tel_desc"
+                android:textSize="11sp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/click_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button style="@style/button_text"
+                android:gravity="center"
+                android:id="@+id/click_focus"
+                android:textSize="@dimen/text_size_s3"
+                android:text="好的"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/s15"
+                android:layout_marginRight="@dimen/s15"
+                android:layout_marginBottom="@dimen/s15"
+                android:layout_height="@dimen/s30"
+                android:background="@drawable/btn_axf_blue"/>
+    </RelativeLayout>
+</FrameLayout>
