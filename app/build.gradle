@@ -8,8 +8,8 @@ android {
         applicationId "com.zhihuianxin.xyaxf"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 259
+        versionName "3.4.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         javaCompileOptions {

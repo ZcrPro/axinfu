@@ -1,7 +1,6 @@
 package com.zhihuianxin.xyaxf.app;
 
 import com.axinfu.modellib.thrift.base.SysName;
-import com.zhihuianxin.xyaxf.BuildConfig;
 
 /**
  * Created by Vincent on 2016/11/1.
@@ -12,7 +11,7 @@ public class AppConstant {
     // https://appserver-v2-test.zhihuianxin.com 银联二维码测试环境
     // https://axinfu-v2-online.zhihuianxin.com/app-service/2.0.3/
     // https://appserver-preview.axinfu.com/app-service/2.0.4/
-    public static final String URL = BuildConfig.API_HOST;
+    public static final String URL = com.zhihuianxin.xyaxf.BuildConfig.API_HOST;
     public static final int DEFAULT_COUNT = 10000;
 
     public static final SysName SYSTEM_NAME = SysName.Android;
