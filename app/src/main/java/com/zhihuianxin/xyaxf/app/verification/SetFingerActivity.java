@@ -27,21 +27,21 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.basetools.shapeimageview.CustomShapeImageView;
-import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.service.CustomerService;
 import com.axinfu.modellib.thrift.lock.Lock;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-import com.zhihuianxin.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
+import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.utils.NetUtils;
+import com.zhihuianxin.xyaxf.basetools.shapeimageview.CustomShapeImageView;
 
 import java.util.HashMap;
 import java.util.Map;

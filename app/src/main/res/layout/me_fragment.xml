@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/axf_bg_blue"
     android:orientation="vertical">
@@ -41,9 +41,9 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/me_msg"
@@ -52,14 +52,14 @@
                 android:layout_marginTop="@dimen/s15"
                 android:background="@drawable/btn_bg_selector">
 
-                <com.axinfu.basetools.shapeimageview.CustomShapeImageView
-                        android:background="@drawable/defaulf_circle"
+                <com.zhihuianxin.xyaxf.basetools.shapeimageview.CustomShapeImageView
                     android:id="@+id/touxiang"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/s15"
+                    android:background="@drawable/defaulf_circle"
                     app:borderColor="#000000"
                     app:imageBorderWidth="0dp"
                     app:onlyDrawBorder="false"
@@ -110,61 +110,60 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:visibility="gone"
-                        android:id="@+id/me_axxyf"
-                        android:layout_width="fill_parent"
-                        android:layout_height="40dp"
-                        android:background="@drawable/btn_bg_selector">
+                    android:id="@+id/me_axxyf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_bg_selector"
+                    android:visibility="gone">
 
                     <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/s15"
-                            android:orientation="horizontal">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:orientation="horizontal">
 
                         <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@mipmap/person_axxyf_icon" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/person_axxyf_icon" />
 
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/s15"
-                                android:text="安心信用付" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s15"
+                            android:text="安心信用付" />
 
                         <TextView
                             android:id="@+id/right_top_txt"
-                            android:layout_marginRight="@dimen/s10"
-                            android:layout_weight="1"
-                            android:gravity="right"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/s15"
+                            android:layout_marginRight="@dimen/s10"
+                            android:layout_weight="1"
+                            android:gravity="right"
                             android:text="" />
 
 
                         <ImageView
-                            android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
+                            android:layout_gravity="center"
                             android:layout_marginRight="@dimen/s15"
                             android:background="@drawable/next_arrow_icon" />
 
                     </LinearLayout>
 
 
-
                     <View
-                            android:layout_marginLeft="@dimen/s15"
-                            android:layout_width="fill_parent"
-                            android:layout_height="0.7dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/axf_line_gray" />
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:background="@color/axf_line_gray" />
                 </RelativeLayout>
 
 
@@ -203,10 +202,10 @@
                         android:background="@drawable/next_arrow_icon" />
 
                     <View
-                            android:layout_marginLeft="@dimen/s15"
                         android:layout_width="fill_parent"
                         android:layout_height="0.7dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/s15"
                         android:background="@color/axf_line_gray" />
                 </RelativeLayout>
 
@@ -246,10 +245,10 @@
                         android:background="@drawable/next_arrow_icon" />
 
                     <View
-                            android:layout_marginLeft="@dimen/s15"
                         android:layout_width="fill_parent"
                         android:layout_height="0.7dp"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/s15"
                         android:background="@color/axf_line_gray" />
 
                 </RelativeLayout>
@@ -282,173 +281,177 @@
                     </LinearLayout>
 
                     <ImageView
-                            android:id="@+id/icon1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/s15"
-                            android:background="@drawable/next_arrow_icon" />
+                        android:id="@+id/icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15"
+                        android:background="@drawable/next_arrow_icon" />
+
                     <TextView
-                            android:visibility="gone"
-                            android:textSize="@dimen/s10"
-                            android:text="仅用于银联二维码付款"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/s10"
-                            android:layout_toLeftOf="@id/icon1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s10"
+                        android:layout_toLeftOf="@id/icon1"
+                        android:text="仅用于银联二维码付款"
+                        android:textSize="@dimen/s10"
+                        android:visibility="gone" />
 
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                    android:layout_marginTop="@dimen/s10"
-                    android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/s10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/setting"
                     android:layout_width="fill_parent"
-                    android:layout_height="120dp">
-                <RelativeLayout
-                        android:id="@+id/setting"
-                        android:layout_width="fill_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_bg_selector">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_selector">
 
                     <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/s15"
-                            android:orientation="horizontal">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:orientation="horizontal">
 
                         <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/union_set" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/union_set" />
 
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/s15"
-                                android:text="设置" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s15"
+                            android:text="设置" />
                     </LinearLayout>
 
                     <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/s15"
-                            android:background="@drawable/next_arrow_icon" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15"
+                        android:background="@drawable/next_arrow_icon" />
 
                     <View
-                            android:layout_marginLeft="@dimen/s15"
-                            android:layout_width="fill_parent"
-                            android:layout_height="0.7dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/axf_line_gray" />
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:background="@color/axf_line_gray" />
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                        android:id="@+id/service"
-                        android:layout_width="fill_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_bg_selector">
+                    android:id="@+id/service"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_selector">
 
                     <LinearLayout
-                            android:id="@+id/service_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/s15"
-                            android:orientation="horizontal">
+                        android:id="@+id/service_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:orientation="horizontal">
 
                         <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/customer_service_icon" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/customer_service_icon" />
 
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/s15"
-                                android:text="我的客服" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s15"
+                            android:text="我的客服" />
 
                     </LinearLayout>
 
                     <ImageView
-                            android:visibility="invisible"
-                            android:id="@+id/me_service_point"
-                            android:layout_marginLeft="@dimen/s10"
-                            android:layout_toRightOf="@id/service_text"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/msg_point"
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"/>
+                        android:id="@+id/me_service_point"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s10"
+                        android:layout_toRightOf="@id/service_text"
+                        android:background="@drawable/msg_point"
+                        android:visibility="invisible" />
+
                     <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/s15"
-                            android:background="@drawable/next_arrow_icon" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15"
+                        android:background="@drawable/next_arrow_icon" />
 
                     <View
-                            android:layout_width="fill_parent"
-                            android:layout_height="0.7dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/axf_line_gray" />
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/axf_line_gray" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                        android:id="@+id/help_center"
-                        android:layout_width="fill_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/btn_bg_selector">
+                    android:id="@+id/help_center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_selector">
 
                     <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="@dimen/s15"
-                            android:orientation="horizontal">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:orientation="horizontal">
 
                         <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/question_icon" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/question_icon" />
 
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="@dimen/s15"
-                                android:text="帮助中心" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s15"
+                            android:text="帮助中心" />
                     </LinearLayout>
 
                     <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/s15"
-                            android:background="@drawable/next_arrow_icon" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/s15"
+                        android:background="@drawable/next_arrow_icon" />
 
                     <View
-                            android:layout_marginLeft="@dimen/s15"
-                            android:layout_width="fill_parent"
-                            android:layout_height="0.7dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/axf_line_gray" />
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/s15"
+                        android:background="@color/axf_line_gray" />
 
                 </RelativeLayout>
             </LinearLayout>
+
             <TextView
                 android:id="@+id/tv_debug_version"
                 android:layout_width="match_parent"

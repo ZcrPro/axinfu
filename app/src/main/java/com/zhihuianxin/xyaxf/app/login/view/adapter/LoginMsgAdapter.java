@@ -19,7 +19,7 @@ import com.axinfu.modellib.thrift.message.ActionType;
 import com.axinfu.modellib.thrift.message.AxfMesssage;
 import com.axinfu.modellib.thrift.message.UPC2BQRPayResultPushContent;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.WebPageActivity;

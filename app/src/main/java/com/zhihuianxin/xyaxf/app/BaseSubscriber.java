@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.MainActivity;
 import com.zhihuianxin.xyaxf.app.view.LoadingDialog;
 

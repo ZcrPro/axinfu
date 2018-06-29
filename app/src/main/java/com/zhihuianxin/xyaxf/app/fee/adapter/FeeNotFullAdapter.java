@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.axinfu.modellib.thrift.fee.Fee;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 
 import java.util.Date;

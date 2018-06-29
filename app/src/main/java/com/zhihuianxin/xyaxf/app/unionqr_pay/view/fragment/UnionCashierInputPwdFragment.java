@@ -26,7 +26,7 @@ import com.axinfu.modellib.thrift.unqr.UPQROrder;
 import com.xyaxf.axpay.modle.PayFor;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.xyaxf.axpay.modle.UPQRPayRequestData;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.secure.Secure;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;

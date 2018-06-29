@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="icon" type="id" />
+    <item name="btn_left" type="id" />
+    <item name="btn_right" type="id" />
+    <item name="ico_left" type="id" />
+    <item name="ico_right" type="id" />
+    <item name="txt_left" type="id" />
+    <item name="txt_right" type="id" />
+    <item name="menu_home" type="id" />
+    <item name="action_bar" type="id" />
+    <item name="title" type="id" />
+    <item name="tag_first" type="id" />
+
+    <item name="xbanner_pointId" type="id" />
+</resources>

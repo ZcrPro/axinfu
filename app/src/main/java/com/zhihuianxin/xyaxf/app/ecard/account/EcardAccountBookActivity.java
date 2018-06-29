@@ -8,7 +8,7 @@ import android.text.TextUtils;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.thrift.ecard.ECardRecord;
-import com.zhihuianxin.axutil.SchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

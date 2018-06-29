@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.axinfu.modellib.thrift.fee.PaymentRecord;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 
 import se.emilsjolander.stickylistheaders.StickyListHeadersAdapter;

@@ -10,7 +10,7 @@ import com.axinfu.modellib.thrift.payment.PaymentOrder;
 import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
 import com.axinfu.modellib.thrift.unqr.UPBankCard;
 import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

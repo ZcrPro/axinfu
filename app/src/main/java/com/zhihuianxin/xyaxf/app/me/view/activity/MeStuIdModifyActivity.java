@@ -13,7 +13,7 @@ import com.axinfu.modellib.thrift.customer.VerifyField;
 import com.axinfu.modellib.thrift.ecard.ECard;
 import com.axinfu.modellib.thrift.ecard.ECardAccount;
 import com.axinfu.modellib.thrift.fee.FeeAccount;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

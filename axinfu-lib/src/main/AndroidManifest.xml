@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.com.axinfu_lib" />
+<manifest package="android.com.axinfu_lib" />

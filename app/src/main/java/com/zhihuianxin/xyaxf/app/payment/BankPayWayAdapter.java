@@ -15,7 +15,7 @@ import com.axinfu.modellib.thrift.base.PayMethod;
 import com.google.gson.Gson;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.unionqr_pay.view.activity.UnionHtmlActivity;

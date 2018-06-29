@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.service.CustomerService;
 import com.axinfu.modellib.thrift.base.PayMethod;
@@ -58,7 +59,7 @@ public class UnionPayWayDefAdapter extends RecyclerAdapter<PayMethod> {
     protected void convert(final RecyclerAdapterHelper helper, final PayMethod item) {
         if (item.purpose != null && item.purpose.equals("UPQRQuickPayOpenCard")) {
             helper.setText(R.id.text, "添加新银行卡付款");
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.setText(R.id.promotion_id, item.promotion_hint);
                 helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
             } else {
@@ -88,7 +89,7 @@ public class UnionPayWayDefAdapter extends RecyclerAdapter<PayMethod> {
                 helper.getItemView().setVisibility(View.VISIBLE);
                 helper.setText(R.id.text, item.card.getIss_ins_name() +item.card.getCard_type_name() +" " + "(" + item.card.getCard_no() + ")");
                 helper.setImageUrl(R.id.img_way,item.card.getIss_ins_icon());
-                if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+                if (!Util.isEmpty(item.promotion_hint)) {
                     helper.setText(R.id.promotion_id, item.promotion_hint);
                     helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 } else {
@@ -100,7 +101,7 @@ public class UnionPayWayDefAdapter extends RecyclerAdapter<PayMethod> {
                 helper.getItemView().setVisibility(View.VISIBLE);
                 helper.setText(R.id.text, "银联在线支付");
                 helper.setImageResource(R.id.img_way, R.drawable.unionpay_icon);
-                if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+                if (!Util.isEmpty(item.promotion_hint)) {
                     helper.setText(R.id.promotion_id, item.promotion_hint);
                     helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 } else {
@@ -113,7 +114,7 @@ public class UnionPayWayDefAdapter extends RecyclerAdapter<PayMethod> {
                 helper.getItemView().setVisibility(View.VISIBLE);
                 helper.setText(R.id.text, "微信支付");
                 helper.setImageResource(R.id.img_way, R.drawable.weixinpay);
-                if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+                if (!Util.isEmpty(item.promotion_hint)) {
                     helper.setText(R.id.promotion_id, item.promotion_hint);
                     helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 } else {
@@ -126,7 +127,7 @@ public class UnionPayWayDefAdapter extends RecyclerAdapter<PayMethod> {
                 helper.getItemView().setVisibility(View.VISIBLE);
                 helper.setText(R.id.text, "支付宝");
                 helper.setImageResource(R.id.img_way, R.drawable.alipay);
-                if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+                if (!Util.isEmpty(item.promotion_hint)) {
                     helper.setText(R.id.promotion_id, item.promotion_hint);
                     helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 } else {

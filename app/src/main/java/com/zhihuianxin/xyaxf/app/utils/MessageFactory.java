@@ -9,7 +9,7 @@ import com.axinfu.modellib.thrift.base.BaseMessageObject;
 import com.axinfu.modellib.thrift.base.BaseRequest;
 import com.axinfu.modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 
 /**

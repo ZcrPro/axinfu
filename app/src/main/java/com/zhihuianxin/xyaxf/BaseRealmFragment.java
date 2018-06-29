@@ -3,7 +3,7 @@ package com.zhihuianxin.xyaxf;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.axinfu.basetools.base.BaseFragment;
+import com.zhihuianxin.xyaxf.app.base.BaseFragment;
 
 import io.realm.Realm;
 

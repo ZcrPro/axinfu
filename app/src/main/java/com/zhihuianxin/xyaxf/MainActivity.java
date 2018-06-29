@@ -38,7 +38,7 @@ import com.axinfu.modellib.thrift.message.ImportantMessageWithUser;
 import com.axinfu.modellib.thrift.unqr.UPBankCard;
 import com.google.gson.Gson;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

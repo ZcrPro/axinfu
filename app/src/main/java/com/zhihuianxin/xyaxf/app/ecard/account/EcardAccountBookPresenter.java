@@ -7,7 +7,7 @@ import com.axinfu.modellib.service.EcardService;
 import com.axinfu.modellib.thrift.base.BaseResponse;
 import com.axinfu.modellib.thrift.ecard.ECardRecord;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.BaseSchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

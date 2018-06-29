@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.axinfu.basetools.base.BaseFragment;
+import com.zhihuianxin.xyaxf.app.base.BaseFragment;
 import com.axinfu.modellib.thrift.business.Business;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.home.adapter.HomeGridAdapter;

@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.service.LoanService;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

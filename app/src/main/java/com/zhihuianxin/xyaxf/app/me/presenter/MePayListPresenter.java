@@ -10,9 +10,10 @@ import com.axinfu.modellib.thrift.fee.PaymentRecord;
 import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayFor;
-import com.zhihuianxin.axutil.BaseSchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
+import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.me.contract.IMePayListContract;
 import com.zhihuianxin.xyaxf.app.utils.NetUtils;
 

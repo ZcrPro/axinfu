@@ -7,9 +7,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-import com.axinfu.basetools.base.BaseActionBarActivity;
+import com.zhihuianxin.xyaxf.app.base.BaseActionBarActivity;
 import com.edmodo.cropper.CropImageView;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 
 import java.io.File;

@@ -114,7 +114,7 @@ public class UnionSwepPayResultActivity extends BaseRealmActionBarActivity imple
             remarkTxt.setVisibility(View.GONE);
         }
         remarkTxt.setText("备注：" + App.mAxLoginSp.getUnionReMark());
-        int[] timeItems = order.pay_time != null ? com.zhihuianxin.axutil.Util.getTimeItems(order.pay_time) : null;
+        int[] timeItems = order.pay_time != null ? Util.getTimeItems(order.pay_time) : null;
         payTimeTxt.setText("交易时间:" + (timeItems != null ?
                 String.format("%02d-%02d-%02d %02d:%02d:%02d", timeItems[0], timeItems[1], timeItems[2], timeItems[3], timeItems[4], timeItems[5]) : ""));
         mNextBtn.setOnClickListener(new View.OnClickListener() {

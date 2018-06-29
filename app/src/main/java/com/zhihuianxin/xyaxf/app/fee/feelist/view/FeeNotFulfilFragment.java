@@ -28,7 +28,7 @@ import com.axinfu.modellib.thrift.fee.SubFeeDeduction;
 import com.axinfu.modellib.thrift.fee.SubFeeItem;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.SchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;
 import com.zhihuianxin.xyaxf.R;

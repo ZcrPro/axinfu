@@ -9,7 +9,7 @@ import android.os.Message;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.axinfu.basetools.base.BaseActivity;
+import com.zhihuianxin.xyaxf.app.base.BaseActivity;
 import com.axinfu.modellib.service.MeService;
 import com.axinfu.modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
@@ -17,7 +17,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.utils.NetUtils;
 

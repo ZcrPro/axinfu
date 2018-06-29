@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 import com.axinfu.modellib.thrift.customer.Customer;
 import com.axinfu.modellib.thrift.fee.FeeAccount;
-import com.zhihuianxin.axutil.SchedulerProvider;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;
 import com.zhihuianxin.xyaxf.R;

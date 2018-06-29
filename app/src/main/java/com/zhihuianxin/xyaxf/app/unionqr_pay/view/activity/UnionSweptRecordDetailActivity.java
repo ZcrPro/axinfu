@@ -12,7 +12,7 @@ import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
 import com.axinfu.modellib.thrift.unqr.UPQROrderType;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
 
@@ -119,7 +119,7 @@ public class UnionSweptRecordDetailActivity extends BaseRealmActionBarActivity{
         ordertype.setText(getType(record.order_type));
         payTxt.setText(record.iss_ins_name+record.card_type_name+"("+record.bankcard_no+")");
         getPayTxt.setText(record.merchant_name);
-        int[] timeItems = record.order_time != null? com.zhihuianxin.axutil.Util.getTimeItems(record.order_time): null;
+        int[] timeItems = record.order_time != null? Util.getTimeItems(record.order_time): null;
         payTime.setText(timeItems!=null ?
                 String.format("%02d-%02d-%02d %02d:%02d:%02d",timeItems[0],timeItems[1],timeItems[2],timeItems[3],timeItems[4],timeItems[5]) : "");
         order_no.setText(record.order_no);

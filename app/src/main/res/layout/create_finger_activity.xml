@@ -47,7 +47,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <com.axinfu.basetools.shapeimageview.CustomShapeImageView
+            <com.zhihuianxin.xyaxf.basetools.shapeimageview.CustomShapeImageView
                 android:id="@+id/avatar_id"
                 android:layout_width="60dp"
                 android:layout_height="60dp"

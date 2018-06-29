@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.axinfu.basetools.banner.XBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.zhihuianxin.xyaxf.basetools.banner.XBanner xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/xbanner"
         android:layout_width="match_parent"
         android:layout_height="@dimen/s200"

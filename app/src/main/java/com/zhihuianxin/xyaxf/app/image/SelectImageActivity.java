@@ -8,14 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.axinfu.basetools.image.ImageLoader;
-import com.axinfu.basetools.image.ImgSelActivity;
-import com.axinfu.basetools.image.ImgSelConfig;
 import com.bumptech.glide.Glide;
 import com.zhihuianxin.xyaxf.R;
+import com.zhihuianxin.xyaxf.basetools.image.ImageLoader;
+import com.zhihuianxin.xyaxf.basetools.image.ImgSelActivity;
+import com.zhihuianxin.xyaxf.basetools.image.ImgSelConfig;
 
 import java.util.List;
+
+
 
 /**
  * Created by zcrpro on 2016/10/24.

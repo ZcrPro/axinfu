@@ -19,7 +19,7 @@ import android.widget.ListView;
 
 import com.axinfu.modellib.thrift.resource.City;
 import com.gjiazhe.wavesidebar.WaveSideBar;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.login.contract.ILoginSelectCityContract;

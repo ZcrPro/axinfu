@@ -124,8 +124,8 @@ dependencies {
     implementation 'com.github.thepacific:adapter:1.0.6'
     implementation 'com.jakewharton:butterknife:5.1.1'
     implementation 'com.getui:sdk:2.11.1.0'
-    implementation project(':AXUtil')
     implementation project(':AxPay')
+    implementation project(':AXUI')
     implementation files('libs/MobCommons-2016.1107.1809.jar')
     implementation files('libs/MobTools-2016.1107.1809.jar')
     implementation files('libs/ShareSDK-Core-2.7.10.jar')

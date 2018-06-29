@@ -19,7 +19,7 @@ import com.axinfu.modellib.thrift.unqr.UPBankCard;
 import com.axinfu.modellib.thrift.unqr.UPCoupon;
 import com.axinfu.modellib.thrift.unqr.UPQROrder;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

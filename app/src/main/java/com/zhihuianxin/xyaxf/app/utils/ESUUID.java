@@ -2,7 +2,7 @@ package com.zhihuianxin.xyaxf.app.utils;
 
 import android.os.Environment;
 
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 
 import java.io.File;

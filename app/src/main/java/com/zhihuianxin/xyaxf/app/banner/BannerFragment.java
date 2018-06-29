@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.axinfu.basetools.banner.XBanner;
+
 import com.axinfu.modellib.thrift.business.Business;
 import com.axinfu.modellib.thrift.customer.Customer;
 import com.axinfu.modellib.thrift.ecard.ECardAccount;
@@ -18,7 +18,7 @@ import com.axinfu.modellib.thrift.fee.FeeAccount;
 import com.axinfu.modellib.thrift.message.ActionType;
 import com.axinfu.modellib.thrift.message.Advertise;
 import com.bumptech.glide.Glide;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;
 import com.zhihuianxin.xyaxf.R;
@@ -27,6 +27,7 @@ import com.zhihuianxin.xyaxf.app.ecard.open.EcardOpenActivity;
 import com.zhihuianxin.xyaxf.app.ecard.view.EcardActivity;
 import com.zhihuianxin.xyaxf.app.fee.FeeActivity;
 import com.zhihuianxin.xyaxf.app.fee.check.FeeCheckActivity;
+import com.zhihuianxin.xyaxf.basetools.banner.XBanner;
 
 import org.json.JSONException;
 import org.json.JSONObject;

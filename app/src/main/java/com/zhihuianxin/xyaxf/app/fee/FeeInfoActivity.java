@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.service.FeeService;
 import com.axinfu.modellib.service.PaymentService;
@@ -23,7 +24,6 @@ import com.xyaxf.axpay.modle.PayFeeExtRequest;
 import com.xyaxf.axpay.modle.PayFeeRequestData;
 import com.xyaxf.axpay.modle.PayFor;
 import com.xyaxf.axpay.modle.PayRequest;
-import com.zhihuianxin.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

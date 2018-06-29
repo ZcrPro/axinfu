@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.axinfu.modellib.thrift.payment.PaymentOrder;
 import com.google.gson.Gson;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

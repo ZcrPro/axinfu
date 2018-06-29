@@ -43,7 +43,7 @@
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                <com.axinfu.basetools.shapeimageview.CustomShapeImageView
+                <com.zhihuianxin.xyaxf.basetools.shapeimageview.CustomShapeImageView
                         android:layout_gravity="center_horizontal"
                         android:id="@+id/touxiang"
                         android:layout_width="60dp"

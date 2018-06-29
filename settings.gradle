@@ -1,1 +1,1 @@
-include ':app', ':axinfu-ui', ':axinfu-lib', ':axinfu-model',':ModelLib', ':BaseTools', ':AXUI', ':AXUtil', ':AxPay'
+include ':app', ':axinfu-ui', ':axinfu-lib', ':axinfu-model',':ModelLib', ':AXUI', ':AxPay'

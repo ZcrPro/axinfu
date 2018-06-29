@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
 import com.axinfu.modellib.thrift.unqr.UPQROrderType;
 import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 
 import java.io.Serializable;

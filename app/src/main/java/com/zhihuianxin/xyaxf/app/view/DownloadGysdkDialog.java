@@ -11,7 +11,7 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.view.View;
 
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.payment.CashierDeskActivity;

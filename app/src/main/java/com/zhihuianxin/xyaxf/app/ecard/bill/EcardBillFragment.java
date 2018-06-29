@@ -9,7 +9,7 @@ package com.zhihuianxin.xyaxf.app.ecard.bill;//package com.zhihuianxin.xyaxf.app
 //import android.widget.TextView;
 //
 //import com.axinfu.modellib.thrift.ecard.ECardChargeRecord;
-//import com.zhihuianxin.axutil.SchedulerProvider;
+//import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 //import com.zhihuianxin.xyaxf.BaseRealmFragment;
 //import com.zhihuianxin.xyaxf.R;
 //

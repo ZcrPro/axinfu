@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.igexin.sdk.PushConsts;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 
 public class GeTuiPushReceiver extends BroadcastReceiver {

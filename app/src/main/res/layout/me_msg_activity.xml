@@ -23,7 +23,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/text_size_s2" />
 
-        <com.axinfu.basetools.shapeimageview.CustomShapeImageView
+        <com.zhihuianxin.xyaxf.basetools.shapeimageview.CustomShapeImageView
             android:layout_marginRight="11dp"
             android:id="@+id/avatar_id"
             android:layout_width="60dp"

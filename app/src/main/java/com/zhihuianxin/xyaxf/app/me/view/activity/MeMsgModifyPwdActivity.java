@@ -12,10 +12,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.axinfu.basetools.base.BaseActionBarActivity;
+import com.zhihuianxin.xyaxf.app.base.BaseActionBarActivity;
 import com.axinfu.modellib.thrift.customer.Customer;
 import com.axinfu.modellib.thrift.customer.VerifyField;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.login.view.activity.LoginGetPwdActivity;

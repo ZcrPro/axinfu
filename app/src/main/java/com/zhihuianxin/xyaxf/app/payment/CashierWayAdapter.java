@@ -249,10 +249,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "银联在线支付");
             helper.setImageResource(R.id.img_way, R.mipmap.shanfu);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
                 helper.getView(R.id.promotion_id).setVisibility(View.GONE);
@@ -266,10 +266,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "建设银行");
             helper.setImageResource(R.id.img_way, R.drawable.ccb);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
                 helper.getView(R.id.promotion_id).setVisibility(View.GONE);
@@ -283,10 +283,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "一卡通");
             helper.setImageResource(R.id.img_way, R.drawable.cardpay);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
                 helper.getView(R.id.promotion_id).setVisibility(View.GONE);
@@ -300,10 +300,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "农行卡支付");
             helper.setImageResource(R.id.img_way, R.drawable.nonghang_pay_logo);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
@@ -318,10 +318,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "支付宝支付");
             helper.setImageResource(R.id.img_way, R.drawable.alipay);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
@@ -336,10 +336,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "微信支付");
             helper.setImageResource(R.id.img_way, R.drawable.weixinpay);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
@@ -354,10 +354,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "添加新卡付款");
             helper.setImageResource(R.id.img_way, R.drawable.union_icon);
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             }
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
@@ -383,10 +383,10 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
                 ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
                 helper.setText(R.id.text, item.card.getIss_ins_name() + item.card.getCard_type_name() + "(" + item.card.getCard_no() + ")");
                 helper.setImageUrl(R.id.img_way, item.card.getIss_ins_icon());
-                if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+                if (!Util.isEmpty(item.assistance_hint)) {
                     helper.setText(R.id.assistance_id, item.assistance_hint);
                 }
-                if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+                if (!Util.isEmpty(item.promotion_hint)) {
                     helper.getView(R.id.promotion_id).setVisibility(View.VISIBLE);
                     helper.setText(R.id.promotion_id, item.promotion_hint);
                 } else {
@@ -404,13 +404,13 @@ public class CashierWayAdapter extends RecyclerAdapter<PayMethod> {
             ((TextView) helper.getView(R.id.promotion_id)).setTextColor(Color.parseColor("#208af0"));
             helper.setText(R.id.text, "安心信用付");
 
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.assistance_hint)) {
+            if (!Util.isEmpty(item.assistance_hint)) {
                 helper.setText(R.id.assistance_id, item.assistance_hint);
             } else {
                 helper.getView(R.id.assistance_id).setVisibility(View.GONE);
             }
 
-            if (!com.zhihuianxin.axutil.Util.isEmpty(item.promotion_hint)) {
+            if (!Util.isEmpty(item.promotion_hint)) {
                 helper.setText(R.id.promotion_id, item.promotion_hint);
             } else {
                 helper.getView(R.id.promotion_id).setVisibility(View.GONE);

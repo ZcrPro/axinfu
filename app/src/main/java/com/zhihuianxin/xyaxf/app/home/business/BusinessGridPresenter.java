@@ -2,7 +2,7 @@ package com.zhihuianxin.xyaxf.app.home.business;
 
 import android.content.Context;
 
-import com.zhihuianxin.axutil.BaseSchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 
 import rx.subscriptions.CompositeSubscription;
 

@@ -23,7 +23,7 @@ import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayFor;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.xyaxf.axpay.modle.UPQRPayRequestData;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;
 import com.zhihuianxin.xyaxf.R;

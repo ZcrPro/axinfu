@@ -16,19 +16,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.basetools.shapeimageview.CustomShapeImageView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
-import com.zhihuianxin.axutil.Util;
+import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.utils.RxBus;
 import com.zhihuianxin.xyaxf.app.verification.LockDialog;
 import com.zhihuianxin.xyaxf.app.verification.UnlockView;
+import com.zhihuianxin.xyaxf.basetools.shapeimageview.CustomShapeImageView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

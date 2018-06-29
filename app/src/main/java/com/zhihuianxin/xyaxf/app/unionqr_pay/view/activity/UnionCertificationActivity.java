@@ -12,7 +12,7 @@ import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.service.PaymentService;
 import com.axinfu.modellib.thrift.customer.Customer;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

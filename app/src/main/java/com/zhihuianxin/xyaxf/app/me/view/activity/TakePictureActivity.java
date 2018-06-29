@@ -12,18 +12,20 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.axinfu.basetools.image.ImageLoader;
-import com.axinfu.basetools.image.ImgSelActivity;
-import com.axinfu.basetools.image.ImgSelConfig;
 import com.bumptech.glide.Glide;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.view.TakePictureDialog;
 import com.zhihuianxin.xyaxf.app.view.TakePictureDialogSimple;
+import com.zhihuianxin.xyaxf.basetools.image.ImageLoader;
+import com.zhihuianxin.xyaxf.basetools.image.ImgSelActivity;
+import com.zhihuianxin.xyaxf.basetools.image.ImgSelConfig;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+
 
 /**
  * Created by John on 2014/8/14.

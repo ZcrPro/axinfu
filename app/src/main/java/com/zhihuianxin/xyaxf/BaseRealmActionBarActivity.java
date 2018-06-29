@@ -3,7 +3,7 @@ package com.zhihuianxin.xyaxf;
 import android.os.Bundle;
 import android.view.View;
 
-import com.axinfu.basetools.base.BaseActionBarActivity;
+import com.zhihuianxin.xyaxf.app.base.BaseActionBarActivity;
 
 import io.realm.Realm;
 

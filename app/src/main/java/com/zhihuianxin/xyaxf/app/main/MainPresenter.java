@@ -6,7 +6,7 @@ import com.zhihuianxin.xyaxf.app.AppConstant;
 import com.axinfu.modellib.service.CustomerService;
 import com.axinfu.modellib.service.MessageService;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

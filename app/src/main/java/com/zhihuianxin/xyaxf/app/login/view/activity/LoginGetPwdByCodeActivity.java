@@ -27,7 +27,7 @@ import com.axinfu.modellib.thrift.base.BaseResponse;
 import com.axinfu.modellib.thrift.customer.Customer;
 import com.axinfu.modellib.thrift.secure_code.VerifyFor;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.BuildConfig;

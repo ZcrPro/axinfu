@@ -11,7 +11,7 @@ import com.axinfu.modellib.thrift.fee.SchoolRoll;
 import com.axinfu.modellib.thrift.fee.SubFeeDeduction;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
-import com.zhihuianxin.axutil.BaseSchedulerProvider;
+import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

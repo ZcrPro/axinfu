@@ -18,7 +18,7 @@
 
     <style name="BottomDialog" parent="full_screen_dialog">
         <item name="android:windowAnimationStyle">@style/DialogAnimBottom</item>
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowNoTitle">true</item>
     </style>
 
@@ -55,7 +55,7 @@
     </style>
 
     <style name="TransparentActivityStyle">
-        <item name="android:windowBackground">@color/axf_important_notice_bg</item>
+        <item name="android:windowBackground">@android:color/background_dark</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>

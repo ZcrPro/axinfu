@@ -10,7 +10,7 @@ import com.axinfu.modellib.thrift.ecard.ECard;
 import com.axinfu.modellib.thrift.ecard.ECardAccount;
 import com.axinfu.modellib.thrift.fee.FeeAccount;
 import com.google.gson.Gson;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

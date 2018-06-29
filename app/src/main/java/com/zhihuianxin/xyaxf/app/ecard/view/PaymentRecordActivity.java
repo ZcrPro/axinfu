@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.axinfu.basetools.base.BaseActivity;
+import com.zhihuianxin.xyaxf.app.base.BaseActivity;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.ecard.adapter.PaymentRecordAdapter;
 

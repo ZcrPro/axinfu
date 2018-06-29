@@ -51,7 +51,7 @@ import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.xyaxf.axpay.modle.PayFor;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.xyaxf.axpay.modle.PaymentInfo;
-import com.zhihuianxin.axutil.Util;
+import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.secure.Secure;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
