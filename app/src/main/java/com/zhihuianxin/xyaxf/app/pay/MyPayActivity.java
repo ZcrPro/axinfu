@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.axinfu.modellib.thrift.base.PayMethod;
+import modellib.thrift.base.PayMethod;
 import com.xyaxf.axpay.Util;
 import com.xyaxf.axpay.modle.PaymentInfo;
 import com.xyaxf.axpay.persistence.AbsSharedPreferencesData;

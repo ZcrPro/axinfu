@@ -1,9 +1,9 @@
 package com.zhihuianxin.xyaxf.app.me.contract;
 
-import com.axinfu.modellib.thrift.customer.VerifyField;
-import com.axinfu.modellib.thrift.ecard.ECard;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.thrift.customer.VerifyField;
+import modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.fee.FeeAccount;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

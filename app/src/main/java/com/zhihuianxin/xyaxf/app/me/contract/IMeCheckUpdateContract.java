@@ -1,9 +1,9 @@
 package com.zhihuianxin.xyaxf.app.me.contract;
 
-import com.axinfu.modellib.thrift.app.PluginInfo;
-import com.axinfu.modellib.thrift.app.Update;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
+import modellib.thrift.app.PluginInfo;
+import modellib.thrift.app.Update;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

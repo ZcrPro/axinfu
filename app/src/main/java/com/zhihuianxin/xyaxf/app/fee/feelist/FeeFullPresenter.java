@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.res.Resources;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.FeeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.fee.FeeRecord;
+import modellib.service.FeeService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.fee.FeeRecord;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
@@ -49,15 +49,6 @@ public class FeeFullPresenter implements FeeFullContract.FeeFullPresenter {
 
     @Override
     public void loadFeeRecordList(String start_date, String end_date, int page_index, int page_size, final boolean isLoadMore) {
-        if (TestDataConfig.FEE_RECORDS) {
-            Gson gson = new Gson();
-            try {
-                FeeFullResponse feeFullResponse = gson.fromJson(mContext.getResources().getString(R.string.fee_records), FeeFullResponse.class);
-                mView.feeFullSuccess(feeFullResponse.fee_records,false);
-            } catch (JsonSyntaxException | Resources.NotFoundException e) {
-                e.printStackTrace();
-            }
-        } else {
             RetrofitFactory.setBaseUrl(AppConstant.URL);
             Map<String, Object> map = new HashMap<>();
             FeeService feeService = ApiFactory.getFactory().create(FeeService.class);
@@ -75,7 +66,6 @@ public class FeeFullPresenter implements FeeFullContract.FeeFullPresenter {
                             mView.feeFullSuccess(feeFullResponse.fee_records,isLoadMore);
                         }
                     });
-        }
     }
 
     @Override

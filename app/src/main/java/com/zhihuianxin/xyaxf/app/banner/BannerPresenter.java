@@ -4,9 +4,9 @@ import android.content.Context;
 import android.util.Log;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.MessageService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.message.Advertise;
+import modellib.service.MessageService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.message.Advertise;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

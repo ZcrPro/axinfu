@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.axinfu.modellib.service.LoginService;
-import com.axinfu.modellib.thrift.customer.Customer;
+import modellib.service.LoginService;
+import modellib.thrift.customer.Customer;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

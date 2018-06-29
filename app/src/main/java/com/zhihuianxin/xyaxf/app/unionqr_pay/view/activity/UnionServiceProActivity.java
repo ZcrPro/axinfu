@@ -7,8 +7,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.service.MeService;
+import modellib.service.CustomerService;
+import modellib.service.MeService;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

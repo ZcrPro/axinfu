@@ -10,12 +10,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.VerifyField;
-import com.axinfu.modellib.thrift.ecard.ECard;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.service.MeService;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.VerifyField;
+import modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.fee.FeeAccount;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

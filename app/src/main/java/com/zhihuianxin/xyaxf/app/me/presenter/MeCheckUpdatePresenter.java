@@ -3,12 +3,12 @@ package com.zhihuianxin.xyaxf.app.me.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.app.PluginInfo;
-import com.axinfu.modellib.thrift.app.Update;
-import com.axinfu.modellib.thrift.base.BaseResponse;
+import modellib.service.CustomerService;
+import modellib.service.MeService;
+import modellib.service.PaymentService;
+import modellib.thrift.app.PluginInfo;
+import modellib.thrift.app.Update;
+import modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

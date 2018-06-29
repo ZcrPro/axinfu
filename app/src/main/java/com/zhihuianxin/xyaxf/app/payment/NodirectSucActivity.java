@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.payment.PaymentOrder;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

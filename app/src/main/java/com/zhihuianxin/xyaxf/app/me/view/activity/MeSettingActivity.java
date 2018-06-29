@@ -26,12 +26,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.app.Update;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.RealNameAuthStatus;
+import modellib.service.PaymentService;
+import modellib.thrift.app.Update;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.RealNameAuthStatus;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

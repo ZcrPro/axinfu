@@ -25,11 +25,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.EcardService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.base.PayMethod;
-import com.axinfu.modellib.thrift.ecard.ECard;
-import com.axinfu.modellib.thrift.ecard.ECardChargeRecord;
+import modellib.service.EcardService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.base.PayMethod;
+import modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECardChargeRecord;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;

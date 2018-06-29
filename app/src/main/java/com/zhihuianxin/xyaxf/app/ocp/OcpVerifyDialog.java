@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.axinfu.modellib.thrift.ocp.CustomerTypes;
+import modellib.thrift.ocp.CustomerTypes;
 import com.zhihuianxin.xyaxf.R;
 
 import butterknife.ButterKnife;

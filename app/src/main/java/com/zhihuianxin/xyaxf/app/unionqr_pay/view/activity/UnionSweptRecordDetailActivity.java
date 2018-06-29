@@ -8,8 +8,8 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
-import com.axinfu.modellib.thrift.unqr.UPQROrderType;
+import modellib.thrift.unqr.NewUnionSwepRecordDetail;
+import modellib.thrift.unqr.UPQROrderType;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;

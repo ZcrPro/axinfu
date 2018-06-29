@@ -1,7 +1,7 @@
 package com.zhihuianxin.xyaxf.app.me.contract;
 
-import com.axinfu.modellib.thrift.fee.PaymentRecord;
-import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
+import modellib.thrift.fee.PaymentRecord;
+import modellib.thrift.unqr.UPQRPayRecord;
 import com.xyaxf.axpay.modle.PayFor;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;

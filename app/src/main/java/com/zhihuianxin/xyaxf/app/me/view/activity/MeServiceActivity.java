@@ -17,9 +17,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.app.Appendix;
-import com.axinfu.modellib.thrift.base.Feedback;
-import com.axinfu.modellib.thrift.resource.UploadFileAccess;
+import modellib.thrift.app.Appendix;
+import modellib.thrift.base.Feedback;
+import modellib.thrift.resource.UploadFileAccess;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

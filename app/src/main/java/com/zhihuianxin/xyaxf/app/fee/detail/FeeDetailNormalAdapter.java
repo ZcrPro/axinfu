@@ -13,7 +13,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.fee.SubFee;
+import modellib.thrift.fee.SubFee;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
 import com.zhihuianxin.xyaxf.R;

@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.RealNameAuthStatus;
+import modellib.service.CustomerService;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.RealNameAuthStatus;
 import com.google.gson.Gson;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;

@@ -3,8 +3,8 @@ package com.zhihuianxin.xyaxf.app.verification;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
+import modellib.service.CustomerService;
+import modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

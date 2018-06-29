@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.business.Business;
+import modellib.thrift.business.Business;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
 import com.zhihuianxin.xyaxf.R;

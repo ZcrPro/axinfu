@@ -4,7 +4,7 @@ import android.graphics.Color;
 import android.text.TextUtils;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.fee.Fee;
+import modellib.thrift.fee.Fee;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;

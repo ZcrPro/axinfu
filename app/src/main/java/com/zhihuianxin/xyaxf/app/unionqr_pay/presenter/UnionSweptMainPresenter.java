@@ -3,10 +3,10 @@ package com.zhihuianxin.xyaxf.app.unionqr_pay.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.service.UPQRService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
+import modellib.service.CustomerService;
+import modellib.service.PaymentService;
+import modellib.service.UPQRService;
+import modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.zhihuianxin.secure.Secure;

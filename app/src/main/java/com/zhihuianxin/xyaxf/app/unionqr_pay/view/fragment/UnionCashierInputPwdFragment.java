@@ -13,16 +13,16 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.base.PayChannel;
-import com.axinfu.modellib.thrift.base.PayMethod;
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.RealNameAuthStatus;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
-import com.axinfu.modellib.thrift.unqr.UPQROrder;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.base.PayChannel;
+import modellib.thrift.base.PayMethod;
+import modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.RealNameAuthStatus;
+import modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPCoupon;
+import modellib.thrift.unqr.UPQROrder;
 import com.xyaxf.axpay.modle.PayFor;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.xyaxf.axpay.modle.UPQRPayRequestData;
@@ -299,7 +299,7 @@ public class UnionCashierInputPwdFragment extends BaseRealmFragment implements
                 upBankCard = entity.getBankCards().get(i);
             }
         }
-        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
         payRequest.pay_method.card.setCard_no(upBankCard.getCard_no());
         payRequest.pay_method.card.setIss_ins_name(upBankCard.getIss_ins_name());
         payRequest.pay_method.card.setIss_ins_icon(upBankCard.getIss_ins_icon());

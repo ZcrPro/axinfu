@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.resource.School;
+import modellib.thrift.resource.School;
 import com.zhihuianxin.xyaxf.R;
 
 /**

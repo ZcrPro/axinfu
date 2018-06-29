@@ -18,9 +18,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.BankCardService;
-import com.axinfu.modellib.thrift.bankcard.BankCard;
-import com.axinfu.modellib.thrift.base.BaseResponse;
+import modellib.service.BankCardService;
+import modellib.thrift.bankcard.BankCard;
+import modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
 import com.zhihuianxin.secure.Secure;
 import com.zhihuianxin.xyaxf.R;

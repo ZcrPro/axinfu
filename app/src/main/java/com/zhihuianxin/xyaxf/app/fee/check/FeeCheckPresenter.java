@@ -3,9 +3,9 @@ package com.zhihuianxin.xyaxf.app.fee.check;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.FeeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.service.FeeService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.fee.FeeAccount;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

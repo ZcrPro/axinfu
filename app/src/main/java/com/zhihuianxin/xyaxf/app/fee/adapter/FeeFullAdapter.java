@@ -9,7 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.axinfu.modellib.thrift.fee.FeeRecord;
+import modellib.thrift.fee.FeeRecord;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;

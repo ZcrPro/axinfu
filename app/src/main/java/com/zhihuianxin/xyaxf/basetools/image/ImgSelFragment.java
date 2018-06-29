@@ -2,7 +2,6 @@ package com.zhihuianxin.xyaxf.basetools.image;
 
 
 import android.app.Activity;
-import android.com.axinfu_lib.R;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -26,6 +25,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.basetools.image.adapter.FolderListAdapter;
 import com.zhihuianxin.xyaxf.basetools.image.adapter.ImageListAdapter;
 import com.zhihuianxin.xyaxf.basetools.image.adapter.PreviewAdapter;

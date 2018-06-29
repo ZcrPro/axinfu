@@ -21,11 +21,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.AxfQRPayService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.ocp.AxfQRPayAccount;
-import com.axinfu.modellib.thrift.ocp.CredentialType;
-import com.axinfu.modellib.thrift.ocp.CustomerTypes;
+import modellib.service.AxfQRPayService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.ocp.AxfQRPayAccount;
+import modellib.thrift.ocp.CredentialType;
+import modellib.thrift.ocp.CustomerTypes;
 import com.google.gson.Gson;
 import com.ms.square.android.expandabletextview.ExpandableTextView;
 import com.zhihuianxin.xyaxf.App;

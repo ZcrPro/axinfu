@@ -4,11 +4,11 @@ import android.content.Context;
 import android.content.res.Resources;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.FeeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.fee.Fee;
-import com.axinfu.modellib.thrift.fee.SchoolRoll;
-import com.axinfu.modellib.thrift.fee.SubFeeDeduction;
+import modellib.service.FeeService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.fee.Fee;
+import modellib.thrift.fee.SchoolRoll;
+import modellib.thrift.fee.SubFeeDeduction;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
@@ -55,15 +55,6 @@ public class FeeNotFullPresenter implements FeeNotFullContract.FeeNotFullPresent
 
     @Override
     public void loadFeeList() {
-        if (TestDataConfig.FEE) {
-            Gson gson = new Gson();
-            try {
-                FeeNotFullResponse feeNotFullResponse = gson.fromJson(mContext.getResources().getString(R.string.fee), FeeNotFullResponse.class);
-                mView.feeNotFullSuccess(feeNotFullResponse.fees,feeNotFullResponse.school_roll,feeNotFullResponse.deductible_fees,"sssss");
-            } catch (JsonSyntaxException | Resources.NotFoundException e) {
-                e.printStackTrace();
-            }
-        } else {
             RetrofitFactory.setBaseUrl(AppConstant.URL);
             Map<String, Object> map = new HashMap<>();
             FeeService feeService = ApiFactory.getFactory().create(FeeService.class);
@@ -79,7 +70,6 @@ public class FeeNotFullPresenter implements FeeNotFullContract.FeeNotFullPresent
                             mView.feeNotFullSuccess(feeNotFullResponse.fees,feeNotFullResponse.school_roll,feeNotFullResponse.deductible_fees,feeNotFullResponse.pay_limit_hint);
                         }
                     });
-        }
     }
 
     @Override

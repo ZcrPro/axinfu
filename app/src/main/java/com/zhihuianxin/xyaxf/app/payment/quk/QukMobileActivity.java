@@ -13,10 +13,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.BankCardService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.payment.BankCardInfo;
-import com.axinfu.modellib.thrift.payment.QuickPayMethod;
+import modellib.service.BankCardService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.payment.BankCardInfo;
+import modellib.thrift.payment.QuickPayMethod;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.zhihuianxin.secure.Secure;

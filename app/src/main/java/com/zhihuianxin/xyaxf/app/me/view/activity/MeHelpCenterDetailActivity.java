@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.app.QuestionAnswer;
+import modellib.thrift.app.QuestionAnswer;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

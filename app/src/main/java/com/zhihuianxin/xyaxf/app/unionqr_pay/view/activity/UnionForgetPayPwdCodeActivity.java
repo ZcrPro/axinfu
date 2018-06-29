@@ -16,9 +16,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.secure_code.VerifyFor;
+import modellib.service.CustomerService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.secure_code.VerifyFor;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

@@ -1,8 +1,9 @@
 package com.xyaxf.axpay.modle;
 
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
 
 import java.util.ArrayList;
+
+import modellib.thrift.unqr.UPCoupon;
 
 /**
  * Created by Vincent on 2017/11/16.

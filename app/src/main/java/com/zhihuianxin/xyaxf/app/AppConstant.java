@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app;
 
-import com.axinfu.modellib.thrift.base.SysName;
+import modellib.thrift.base.SysName;
 
 /**
  * Created by Vincent on 2016/11/1.

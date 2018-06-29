@@ -8,7 +8,7 @@ import android.widget.CheckBox;
 import android.widget.GridView;
 import android.widget.RelativeLayout;
 
-import com.axinfu.modellib.thrift.fee.SubFeeItem;
+import modellib.thrift.fee.SubFeeItem;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
 import com.zhihuianxin.xyaxf.R;

@@ -1,12 +1,12 @@
 package com.zhihuianxin.xyaxf.basetools.image.adapter;
 
 import android.app.Activity;
-import android.com.axinfu_lib.R;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.basetools.image.ImgSelConfig;
 import com.zhihuianxin.xyaxf.basetools.image.bean.Image;
 import com.zhihuianxin.xyaxf.basetools.image.common.Constant;

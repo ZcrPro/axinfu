@@ -2,7 +2,6 @@ package com.zhihuianxin.xyaxf.app.base;
 
 
 import android.app.Activity;
-import android.com.axinfu_lib.R;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.view.View;
@@ -10,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.zhihuianxin.xyaxf.R;
 
 
 /**

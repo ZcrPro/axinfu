@@ -15,12 +15,14 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_LOGS"
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SET_DEBUG_APP"
+    <uses-permission
+        android:name="android.permission.SET_DEBUG_APP"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
@@ -31,6 +33,7 @@
     <uses-permission android:name="android.permission.NFC" />
 
     <uses-feature android:name="android.hardware.nfc.hce" />
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
@@ -51,7 +54,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".app.service.DownloadAPKService"/>
+        <service android:name=".app.service.DownloadAPKService" />
+
         <activity
             android:name=".app.SplashActivity"
             android:screenOrientation="portrait" />
@@ -187,8 +191,7 @@
             android:theme="@style/TackPictureActivityStyle" />
         <activity
             android:name=".app.me.view.activity.MeFeedBackShowPicActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/TransparentActivityStyle" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".app.me.view.activity.CropImageActivity"
             android:label="剪裁照片"
@@ -230,7 +233,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.axinfu.basetools.image.ImgSelActivity"
+            android:name=".basetools.image.ImgSelActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".app.image.SelectImageActivity" />
         <activity
@@ -246,15 +249,13 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".app.view.ImportantNoticeActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/TransparentActivityStyle" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".app.login.view.activity.LoginMsgDetailActivity"
             android:label="消息" />
         <activity
             android:name=".app.fee.feelist.view.FeeNotFulfilSearchFeeActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/TransparentActivityStyle" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".app.payment.CashierRFIDPayActivity"
             android:label="一卡通支付"
@@ -266,9 +267,10 @@
         <activity
             android:name=".app.pay.PayActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".app.payment.FeeCashierDeskActivity"
+        <activity
+            android:name=".app.payment.FeeCashierDeskActivity"
             android:label="选择支付方式"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".app.pay.MyPayActivity"
             android:screenOrientation="portrait" />
@@ -285,8 +287,8 @@
         <activity
             android:name=".app.ocp.OcpPayFixedDeskActivity"
             android:label="支付确认"
-            android:windowSoftInputMode="stateHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".app.fee.FeeInfoActivity"
             android:label="确认信息"
@@ -323,9 +325,10 @@
         <activity
             android:name=".app.me.MeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".app.axxyf.HelpOldActivity"
-            android:theme="@style/TransparentActivityStyle"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".app.axxyf.HelpOldActivity"
+
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.unionpay.uppay.PayActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -390,8 +393,8 @@
         <activity
             android:name=".app.unionqr_pay.view.activity.UnionForgetPayPwdCodeActivity"
             android:label="短信验证"
-            android:windowSoftInputMode="stateVisible|adjustResize"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".app.unionqr_pay.view.activity.UnionPAyResultActivity"
             android:label="支付结果"
@@ -459,47 +462,47 @@
             android:label="服务协议"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.login.view.activity.LoginFingerActivity"
             android:label="服务协议"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity android:name=".app.me.view.fragment.TestActivity" />
         <activity android:name=".app.verification.FingerActivity" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.verification.UnionSetGestureActivity"
             android:label="设置解锁密码"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.verification.UnionVerGestureActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
             android:name=".app.verification.LockActivity"
             android:label="解锁密码"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.verification.SetFingerActivity"
             android:label="解锁密码"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.lock.create.SetGestureActivity"
             android:label="设置解锁密码"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.lock.create.CreateFingerActivity"
             android:label="设置指纹解锁"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.lock.create.GestureActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:launchMode="singleTask"
             android:name=".app.lock.create.VerFingerActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
             android:name=".app.payment.NodirectSucActivity"
@@ -519,15 +522,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".app.me.view.activity.MePayListNewActivity"
+        <activity
+            android:name=".app.me.view.activity.MePayListNewActivity"
             android:label="交易记录"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden"/>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--阿里云检测-->
         <meta-data
             android:name="com.alibaba.app.appkey"
@@ -571,12 +575,10 @@
 
         <activity
             android:name=".app.axxyf.HelpActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/TransparentActivityStyle" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".app.axxyf.ReplymentResultActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/TransparentActivityStyle" />
+            android:screenOrientation="portrait" />
 
         <!--安心信用付-->
         <activity

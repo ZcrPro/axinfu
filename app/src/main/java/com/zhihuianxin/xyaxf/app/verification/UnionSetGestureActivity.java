@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.lock.Lock;
+import modellib.thrift.lock.Lock;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
@@ -166,7 +166,7 @@ public class UnionSetGestureActivity extends BaseRealmActionBarActivity {
                 realm.executeTransactionAsync(new Realm.Transaction() {
                     @Override
                     public void execute(Realm bgRealm) {
-                        com.axinfu.modellib.thrift.lock.Lock lock = new Lock();
+                        modellib.thrift.lock.Lock lock = new Lock();
                         lock.mobile = App.mAxLoginSp.getUserMobil();
                         lock.gesturePassword = pwd;
                         lock.gestureStatus = true;

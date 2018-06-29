@@ -7,9 +7,9 @@ import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.CustomerBaseInfo;
-import com.axinfu.modellib.thrift.customer.VerifyField;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.CustomerBaseInfo;
+import modellib.thrift.customer.VerifyField;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

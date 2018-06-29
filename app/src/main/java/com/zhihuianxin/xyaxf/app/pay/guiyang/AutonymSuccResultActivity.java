@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoanService;
+import modellib.service.LoanService;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

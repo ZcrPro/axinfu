@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.fee.PaymentRecord;
+import modellib.thrift.fee.PaymentRecord;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 

@@ -3,7 +3,7 @@ package com.zhihuianxin.xyaxf.app.login.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoginService;
+import modellib.service.LoginService;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.BuildConfig;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

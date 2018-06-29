@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.fee.adapter;
 
-import com.axinfu.modellib.thrift.fee.PayFeeRecord;
+import modellib.thrift.fee.PayFeeRecord;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.zhihuianxin.xyaxf.R;

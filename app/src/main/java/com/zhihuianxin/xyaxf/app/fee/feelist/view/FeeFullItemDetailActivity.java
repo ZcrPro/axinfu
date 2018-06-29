@@ -7,11 +7,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.FeeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
-import com.axinfu.modellib.thrift.fee.FeeRecord;
-import com.axinfu.modellib.thrift.fee.SchoolRoll;
+import modellib.service.FeeService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.fee.FeeAccount;
+import modellib.thrift.fee.FeeRecord;
+import modellib.thrift.fee.SchoolRoll;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

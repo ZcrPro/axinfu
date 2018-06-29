@@ -1,8 +1,8 @@
 package com.zhihuianxin.xyaxf.app.me.contract;
 
-import com.axinfu.modellib.thrift.app.Appendix;
-import com.axinfu.modellib.thrift.base.Feedback;
-import com.axinfu.modellib.thrift.resource.UploadFileAccess;
+import modellib.thrift.app.Appendix;
+import modellib.thrift.base.Feedback;
+import modellib.thrift.resource.UploadFileAccess;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

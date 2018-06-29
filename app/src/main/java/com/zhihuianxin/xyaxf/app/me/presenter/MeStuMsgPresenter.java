@@ -3,12 +3,12 @@ package com.zhihuianxin.xyaxf.app.me.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.ecard.ECard;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.service.CustomerService;
+import modellib.service.MeService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.fee.FeeAccount;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

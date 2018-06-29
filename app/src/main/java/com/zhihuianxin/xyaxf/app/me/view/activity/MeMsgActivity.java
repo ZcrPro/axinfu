@@ -14,11 +14,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.CustomerBaseInfo;
-import com.axinfu.modellib.thrift.resource.UploadFileAccess;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.RealNameAuthStatus;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.CustomerBaseInfo;
+import modellib.thrift.resource.UploadFileAccess;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.RealNameAuthStatus;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;

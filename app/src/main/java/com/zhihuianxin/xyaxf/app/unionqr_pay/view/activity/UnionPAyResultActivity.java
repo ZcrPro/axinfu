@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
-import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
-import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
+import modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.unqr.NewUnionSwepRecordDetail;
+import modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPQRPayRecord;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

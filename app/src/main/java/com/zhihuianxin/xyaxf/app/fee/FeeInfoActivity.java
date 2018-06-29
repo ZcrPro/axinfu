@@ -14,11 +14,11 @@ import android.widget.Toast;
 
 import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.FeeService;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.base.PayMethod;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.fee.SubFeeItem;
+import modellib.service.FeeService;
+import modellib.service.PaymentService;
+import modellib.thrift.base.PayMethod;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.fee.SubFeeItem;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayFeeExtRequest;
 import com.xyaxf.axpay.modle.PayFeeRequestData;

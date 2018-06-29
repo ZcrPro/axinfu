@@ -3,9 +3,9 @@ package com.zhihuianxin.xyaxf.app.login.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.MessageService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.message.AxfMesssage;
+import modellib.service.MessageService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.message.AxfMesssage;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

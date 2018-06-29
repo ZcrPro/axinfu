@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.home.business;
 
-import com.axinfu.modellib.thrift.business.Business;
+import modellib.thrift.business.Business;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

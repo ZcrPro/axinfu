@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.base.PayMethod;
+import modellib.service.PaymentService;
+import modellib.thrift.base.PayMethod;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

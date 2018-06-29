@@ -1,7 +1,7 @@
 package com.zhihuianxin.xyaxf.app.ecard.open;
 
-import com.axinfu.modellib.thrift.ecard.ECard;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECardAccount;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

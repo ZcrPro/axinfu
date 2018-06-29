@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.app.QuestionAnswer;
+import modellib.thrift.app.QuestionAnswer;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.WebPageActivity;

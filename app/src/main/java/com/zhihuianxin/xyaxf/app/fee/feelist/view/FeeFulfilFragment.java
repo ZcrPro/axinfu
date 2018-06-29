@@ -15,9 +15,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
-import com.axinfu.modellib.thrift.fee.FeeRecord;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.fee.FeeAccount;
+import modellib.thrift.fee.FeeRecord;
 import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

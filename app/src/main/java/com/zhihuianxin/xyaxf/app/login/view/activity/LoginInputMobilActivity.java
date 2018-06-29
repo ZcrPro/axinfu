@@ -27,9 +27,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.MobileStatus;
-import com.axinfu.modellib.thrift.customer.VerifyField;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.MobileStatus;
+import modellib.thrift.customer.VerifyField;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

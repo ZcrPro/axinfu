@@ -18,11 +18,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.axinfu.modellib.thrift.business.Business;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
-import com.axinfu.modellib.thrift.resource.School;
+import modellib.thrift.business.Business;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.fee.FeeAccount;
+import modellib.thrift.resource.School;
 import com.gjiazhe.wavesidebar.WaveSideBar;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;

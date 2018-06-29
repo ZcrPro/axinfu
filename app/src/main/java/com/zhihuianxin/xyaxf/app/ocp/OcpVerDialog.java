@@ -14,7 +14,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.ocp.CredentialType;
+import modellib.thrift.ocp.CredentialType;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.ocp.adapter.OcpSelectCardAdapter;
 

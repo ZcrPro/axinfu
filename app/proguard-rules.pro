@@ -176,7 +176,7 @@
 
 #-----------处理实体类---------------
 # 在开发的时候我们可以将所有的实体类放在一个包内，这样我们写一次混淆就行了。
--keep public class com.axinfu.modellib.**
+-keep public class modellib.**
 
 #-----------处理第三方依赖库---------
 # ButterKnife
@@ -203,7 +203,7 @@
 -keep class com.google.gson.stream.** { *; }
 # 使用Gson时需要配置Gson的解析对象及变量都不混淆。不然Gson会找不到变量。
 # 将下面替换成自己的实体类
--keep class com.axinfu.modellib.** { *; }
+-keep class modellib.** { *; }
 
 # OkHttp3
 -dontwarn com.squareup.okhttp3.**

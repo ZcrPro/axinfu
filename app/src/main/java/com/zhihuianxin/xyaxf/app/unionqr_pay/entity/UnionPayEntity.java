@@ -1,8 +1,8 @@
 package com.zhihuianxin.xyaxf.app.unionqr_pay.entity;
 
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
-import com.axinfu.modellib.thrift.unqr.UPQROrder;
+import modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPCoupon;
+import modellib.thrift.unqr.UPQROrder;
 
 import java.io.Serializable;
 import java.util.ArrayList;

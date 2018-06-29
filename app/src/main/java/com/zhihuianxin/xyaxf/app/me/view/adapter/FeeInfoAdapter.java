@@ -4,7 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.axinfu.modellib.thrift.fee.RecordSubFee;
+import modellib.thrift.fee.RecordSubFee;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
 import com.zhihuianxin.xyaxf.R;

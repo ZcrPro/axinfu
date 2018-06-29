@@ -13,12 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.FeeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.business.AccountVerifyItem;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.fee.Fee;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.service.FeeService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.business.AccountVerifyItem;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.fee.Fee;
+import modellib.thrift.fee.FeeAccount;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;

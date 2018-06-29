@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.app.QuestionAnswer;
+import modellib.thrift.app.QuestionAnswer;
 import com.zhihuianxin.xyaxf.R;
 
 /**

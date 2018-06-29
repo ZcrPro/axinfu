@@ -33,14 +33,14 @@ import android.widget.Toast;
 
 import com.alipay.sdk.app.PayTask;
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.AxfQRPayService;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.base.PayMethod;
-import com.axinfu.modellib.thrift.fee.PaymentRecord;
-import com.axinfu.modellib.thrift.ocp.OcpAccount;
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
+import modellib.service.AxfQRPayService;
+import modellib.service.PaymentService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.base.PayMethod;
+import modellib.thrift.fee.PaymentRecord;
+import modellib.thrift.ocp.OcpAccount;
+import modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.unqr.PaymentConfig;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
@@ -1597,7 +1597,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                         UPQRQuickPayChannelRequest upqrQuickPayChannelRequest = new UPQRQuickPayChannelRequest();
                         upqrQuickPayChannelRequest.bank_card_code = payMethod.card.id;
                         payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                         payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                         payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                         payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1623,7 +1623,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                                         e.printStackTrace();
                                     }
                                     payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                                    payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                                    payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                                     payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                                     payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                                     payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1643,7 +1643,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                         UPQRQuickPayChannelRequest upqrQuickPayChannelRequest = new UPQRQuickPayChannelRequest();
                         upqrQuickPayChannelRequest.bank_card_code = payMethod.card.id;
                         payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                         payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                         payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                         payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1669,7 +1669,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                                         e.printStackTrace();
                                     }
                                     payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                                    payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                                    payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                                     payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                                     payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                                     payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1731,7 +1731,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                         UPQRQuickPayChannelRequest upqrQuickPayChannelRequest = new UPQRQuickPayChannelRequest();
                         upqrQuickPayChannelRequest.bank_card_code = payMethod.card.id;
                         payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                         payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                         payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                         payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1748,7 +1748,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                             e.printStackTrace();
                         }
                         payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                         payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                         payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                         payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1763,7 +1763,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                         UPQRQuickPayChannelRequest upqrQuickPayChannelRequest = new UPQRQuickPayChannelRequest();
                         upqrQuickPayChannelRequest.bank_card_code = payMethod.card.id;
                         payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                         payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                         payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                         payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);
@@ -1780,7 +1780,7 @@ public class OcpPayFixedDeskActivity extends BaseRealmActionBarActivity implemen
                             e.printStackTrace();
                         }
                         payRequest.channel_request_data = upqrQuickPayChannelRequest;
-                        payRequest.pay_method.card = new com.axinfu.modellib.thrift.unqr.UPBankCard();
+                        payRequest.pay_method.card = new modellib.thrift.unqr.UPBankCard();
                         payRequest.pay_method.card.setCard_no(payMethod.card.card_no);
                         payRequest.pay_method.card.setIss_ins_name(payMethod.card.iss_ins_name);
                         payRequest.pay_method.card.setIss_ins_icon(payMethod.card.iss_ins_icon);

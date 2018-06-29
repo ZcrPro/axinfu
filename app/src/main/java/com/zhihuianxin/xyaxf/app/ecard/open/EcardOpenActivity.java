@@ -12,11 +12,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.business.AccountVerifyItem;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.ecard.ECard;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.thrift.business.AccountVerifyItem;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.fee.FeeAccount;
 import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

@@ -12,11 +12,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.BankCardService;
-import com.axinfu.modellib.thrift.bankcard.BankCard;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.VerifyField;
+import modellib.service.BankCardService;
+import modellib.thrift.bankcard.BankCard;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.VerifyField;
 import com.google.gson.Gson;
 import com.zhihuianxin.secure.Secure;
 import com.zhihuianxin.xyaxf.App;

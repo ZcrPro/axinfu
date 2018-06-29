@@ -25,11 +25,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.fee.PaymentRecord;
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.fee.PaymentRecord;
+import modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.UPBankCard;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;

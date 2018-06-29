@@ -3,8 +3,8 @@ package com.zhihuianxin.xyaxf.app.main;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.service.MessageService;
+import modellib.service.CustomerService;
+import modellib.service.MessageService;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

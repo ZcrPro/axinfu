@@ -8,8 +8,8 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 import com.astuetz.PagerSlidingTabStrip;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.fee.FeeAccount;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

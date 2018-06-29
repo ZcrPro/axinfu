@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoanService;
+import modellib.service.LoanService;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;
 import com.zhihuianxin.xyaxf.R;

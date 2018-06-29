@@ -16,8 +16,8 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.UPQRService;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
+import modellib.service.UPQRService;
+import modellib.thrift.unqr.UPBankCard;
 import com.google.gson.Gson;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;

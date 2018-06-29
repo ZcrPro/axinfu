@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.res.Resources;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.EcardService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.ecard.ECard;
+import modellib.service.EcardService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.ecard.ECard;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
@@ -53,18 +53,6 @@ public class Ecardpresenter implements EcardContract.EcardPresenter {
 
     @Override
     public void loadEcardData(boolean refresh) {
-        if (TestDataConfig.ECARD) {
-            Gson gson = new Gson();
-            try {
-                EcardResponse ecardResponse = gson.fromJson(mContext.getResources().getString(R.string.ecard), EcardResponse.class);
-                mView.ecardSuccess(ecardResponse.ecard);
-                if (ecardResponse.resp.resp_code.equals(AppConstant.NEED_ECARD_PASSWORD)){
-                    mView.needPassword();
-                }
-            } catch (JsonSyntaxException | Resources.NotFoundException e) {
-                e.printStackTrace();
-            }
-        } else {
             if (!refresh) {
                 loadingDialog.show();
             }
@@ -85,7 +73,6 @@ public class Ecardpresenter implements EcardContract.EcardPresenter {
                             loadingDialog.dismiss();
                         }
                     });
-        }
     }
 
     @Override

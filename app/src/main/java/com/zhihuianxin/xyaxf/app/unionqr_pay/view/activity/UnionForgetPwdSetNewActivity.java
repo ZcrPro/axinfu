@@ -8,12 +8,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
-import com.axinfu.modellib.thrift.unqr.UPQROrder;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.UPCoupon;
+import modellib.thrift.unqr.UPQROrder;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.unionqr_pay.contract.IunionPayPwdContract;

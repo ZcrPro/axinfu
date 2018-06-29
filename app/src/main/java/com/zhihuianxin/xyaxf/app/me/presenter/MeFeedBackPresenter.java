@@ -3,11 +3,11 @@ package com.zhihuianxin.xyaxf.app.me.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.thrift.app.Appendix;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.base.Feedback;
-import com.axinfu.modellib.thrift.resource.UploadFileAccess;
+import modellib.service.MeService;
+import modellib.thrift.app.Appendix;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.base.Feedback;
+import modellib.thrift.resource.UploadFileAccess;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

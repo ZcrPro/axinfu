@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
-import com.axinfu.modellib.thrift.unqr.UPQROrderType;
-import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
+import modellib.thrift.unqr.NewUnionSwepRecordDetail;
+import modellib.thrift.unqr.UPQROrderType;
+import modellib.thrift.unqr.UPQRPayRecord;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.R;
 

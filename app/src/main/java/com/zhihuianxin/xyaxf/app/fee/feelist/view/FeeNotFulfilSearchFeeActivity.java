@@ -12,11 +12,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.fee.Fee;
-import com.axinfu.modellib.thrift.fee.FeeNotCheckCacheItem;
-import com.axinfu.modellib.thrift.fee.SchoolRoll;
-import com.axinfu.modellib.thrift.fee.SubFeeDeduction;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.fee.Fee;
+import modellib.thrift.fee.FeeNotCheckCacheItem;
+import modellib.thrift.fee.SchoolRoll;
+import modellib.thrift.fee.SubFeeDeduction;
 import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

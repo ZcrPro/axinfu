@@ -3,7 +3,7 @@ package com.zhihuianxin.xyaxf.app.login.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
+import modellib.service.CustomerService;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

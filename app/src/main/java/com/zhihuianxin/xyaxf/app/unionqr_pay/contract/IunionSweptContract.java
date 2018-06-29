@@ -1,10 +1,10 @@
 package com.zhihuianxin.xyaxf.app.unionqr_pay.contract;
 
-import com.axinfu.modellib.thrift.fee.PaymentRecord;
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.fee.PaymentRecord;
+import modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
+import modellib.thrift.unqr.UPBankCard;
 import com.xyaxf.axpay.modle.PayRequest;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

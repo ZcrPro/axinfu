@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.axinfu.modellib.service.LoginService;
-import com.axinfu.modellib.thrift.customer.Customer;
+import modellib.service.LoginService;
+import modellib.thrift.customer.Customer;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

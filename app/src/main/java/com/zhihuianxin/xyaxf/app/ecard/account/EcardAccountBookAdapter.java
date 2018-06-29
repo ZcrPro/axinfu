@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.ecard.ECardRecord;
+import modellib.thrift.ecard.ECardRecord;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;

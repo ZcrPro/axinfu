@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.utils;
 
-import com.axinfu.modellib.thrift.customer.Customer;
+import modellib.thrift.customer.Customer;
 
 /**
  * Created by zcrpro on 2016/11/23.

@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.ecard.bill;//package com.zhihuianxin.xyaxf.app.ecard.bill;
 //
-//import com.axinfu.modellib.thrift.ecard.ECardChargeRecord;
+//import modellib.thrift.ecard.ECardChargeRecord;
 //import com.zhihuianxin.xyaxf.app.BasePresenter;
 //import com.zhihuianxin.xyaxf.app.BaseView;
 //

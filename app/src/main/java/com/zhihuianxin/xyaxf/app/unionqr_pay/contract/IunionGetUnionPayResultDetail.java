@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.unionqr_pay.contract;
 
-import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
+import modellib.thrift.unqr.UPQRPayRecord;
 import com.zhihuianxin.xyaxf.app.BaseView;
 
 /**

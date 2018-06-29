@@ -11,12 +11,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoanService;
-import com.axinfu.modellib.thrift.app.PluginInfo;
-import com.axinfu.modellib.thrift.app.Update;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.RealName;
+import modellib.service.LoanService;
+import modellib.thrift.app.PluginInfo;
+import modellib.thrift.app.Update;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.RealName;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.App;

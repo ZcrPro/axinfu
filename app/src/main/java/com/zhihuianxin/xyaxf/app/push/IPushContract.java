@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.push;
 
-import com.axinfu.modellib.thrift.message.ImportantMessage;
+import modellib.thrift.message.ImportantMessage;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

@@ -2,7 +2,6 @@ package com.zhihuianxin.xyaxf.basetools.image;
 
 import android.Manifest;
 import android.app.Activity;
-import android.com.axinfu_lib.R;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -22,6 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.basetools.image.common.Callback;
 import com.zhihuianxin.xyaxf.basetools.image.common.Constant;
 import com.zhihuianxin.xyaxf.basetools.image.utils.FileUtils;

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.base.PayMethod;
+import modellib.thrift.base.PayMethod;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.utils.RxBus;

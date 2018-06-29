@@ -11,12 +11,12 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
-import com.axinfu.modellib.thrift.business.Business;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.ecard.ECardAccount;
-import com.axinfu.modellib.thrift.fee.FeeAccount;
-import com.axinfu.modellib.thrift.message.ActionType;
-import com.axinfu.modellib.thrift.message.Advertise;
+import modellib.thrift.business.Business;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.ecard.ECardAccount;
+import modellib.thrift.fee.FeeAccount;
+import modellib.thrift.message.ActionType;
+import modellib.thrift.message.Advertise;
 import com.bumptech.glide.Glide;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.App;

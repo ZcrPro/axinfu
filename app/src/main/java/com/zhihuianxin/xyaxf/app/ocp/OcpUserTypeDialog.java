@@ -14,7 +14,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.ocp.CustomerTypes;
+import modellib.thrift.ocp.CustomerTypes;
 import com.zhihuianxin.xyaxf.R;
 
 import java.util.List;

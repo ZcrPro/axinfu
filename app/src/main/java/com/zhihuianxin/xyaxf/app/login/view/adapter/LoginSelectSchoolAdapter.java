@@ -10,7 +10,7 @@ import android.widget.CheckedTextView;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.resource.School;
+import modellib.thrift.resource.School;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;
 

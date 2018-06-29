@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.unionqr_pay.contract;
 
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPBankCard;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

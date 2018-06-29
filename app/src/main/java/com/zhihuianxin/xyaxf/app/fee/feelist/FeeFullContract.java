@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.fee.feelist;
 
-import com.axinfu.modellib.thrift.fee.FeeRecord;
+import modellib.thrift.fee.FeeRecord;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

@@ -12,10 +12,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
-import com.axinfu.modellib.thrift.unqr.UPQROrder;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPCoupon;
+import modellib.thrift.unqr.UPQROrder;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;

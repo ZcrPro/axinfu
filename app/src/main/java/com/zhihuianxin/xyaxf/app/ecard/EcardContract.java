@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.ecard;
 
-import com.axinfu.modellib.thrift.ecard.ECard;
+import modellib.thrift.ecard.ECard;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

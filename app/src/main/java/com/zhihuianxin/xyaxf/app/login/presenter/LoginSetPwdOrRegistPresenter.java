@@ -3,11 +3,11 @@ package com.zhihuianxin.xyaxf.app.login.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoginService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.MobileStatus;
-import com.axinfu.modellib.thrift.secure_code.VerifyFor;
+import modellib.service.LoginService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.MobileStatus;
+import modellib.thrift.secure_code.VerifyFor;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BuildConfig;

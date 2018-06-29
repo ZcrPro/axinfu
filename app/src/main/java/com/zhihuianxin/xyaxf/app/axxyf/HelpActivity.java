@@ -11,9 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoanService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.loan.RepaymentInfo;
+import modellib.service.LoanService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.loan.RepaymentInfo;
 import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.R;

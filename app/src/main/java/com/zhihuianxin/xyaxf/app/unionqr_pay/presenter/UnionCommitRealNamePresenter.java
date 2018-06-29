@@ -3,8 +3,8 @@ package com.zhihuianxin.xyaxf.app.unionqr_pay.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.UPQRService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
+import modellib.service.UPQRService;
+import modellib.thrift.base.BaseResponse;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;
 import com.zhihuianxin.xyaxf.app.RetrofitFactory;

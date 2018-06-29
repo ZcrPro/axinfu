@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.EcardService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.ecard.ECardChargeRecord;
+import modellib.service.EcardService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.ecard.ECardChargeRecord;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

@@ -14,10 +14,10 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.base.PayChannel;
-import com.axinfu.modellib.thrift.payment.OrderRecord;
-import com.axinfu.modellib.thrift.payment.QROrder;
+import modellib.service.PaymentService;
+import modellib.thrift.base.PayChannel;
+import modellib.thrift.payment.OrderRecord;
+import modellib.thrift.payment.QROrder;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayFor;
 import com.xyaxf.axpay.modle.PayRequest;
@@ -176,7 +176,7 @@ public class QRPayActivity extends BaseRealmActionBarActivity {
             isFrist = false;
             QROrder oder = new Gson().fromJson(orderInfo, QROrder.class);
             PayRequest payRequest = new PayRequest();
-            com.axinfu.modellib.thrift.base.PayMethod payMethod = new com.axinfu.modellib.thrift.base.PayMethod();
+            modellib.thrift.base.PayMethod payMethod = new modellib.thrift.base.PayMethod();
             payMethod.channel = PayChannel.UnionPay.name();
             payRequest.pay_method = payMethod;
             PaymentInfo paymentInfo = new PaymentInfo();

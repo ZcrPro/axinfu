@@ -3,10 +3,10 @@ package com.zhihuianxin.xyaxf.app.login.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoginService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.resource.School;
+import modellib.service.LoginService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.resource.School;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.ecard.account;
 
-import com.axinfu.modellib.thrift.ecard.ECardRecord;
+import modellib.thrift.ecard.ECardRecord;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

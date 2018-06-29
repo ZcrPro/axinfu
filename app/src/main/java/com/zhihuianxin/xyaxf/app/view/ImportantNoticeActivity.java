@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.message.ImportantMessage;
+import modellib.thrift.message.ImportantMessage;
 import com.zhihuianxin.xyaxf.R;
 
 import java.util.ArrayList;

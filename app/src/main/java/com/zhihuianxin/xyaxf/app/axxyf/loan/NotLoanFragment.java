@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.LoanService;
+import modellib.service.LoanService;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.BaseRealmFragment;
 import com.zhihuianxin.xyaxf.R;

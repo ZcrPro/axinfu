@@ -1,8 +1,9 @@
 package com.xyaxf.axpay.modle;
 
-import com.axinfu.modellib.thrift.base.PayMethod;
 
 import java.io.Serializable;
+
+import modellib.thrift.base.PayMethod;
 
 /**
  * AUTO-GENERATE FILE, DO NOT MODIFY

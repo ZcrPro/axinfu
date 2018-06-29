@@ -2,8 +2,8 @@ package com.zhihuianxin.xyaxf.app.payment;
 
 import android.content.Context;
 
-import com.axinfu.modellib.thrift.payment.BankLimit;
-import com.axinfu.modellib.thrift.payment.PayLimit;
+import modellib.thrift.payment.BankLimit;
+import modellib.thrift.payment.PayLimit;
 import com.xyaxf.axpay.persistence.AbsSharedPreferencesData;
 
 import java.util.List;

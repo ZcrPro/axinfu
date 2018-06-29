@@ -3,9 +3,9 @@ package com.zhihuianxin.xyaxf.app.ecard.account;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.EcardService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.ecard.ECardRecord;
+import modellib.service.EcardService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.ecard.ECardRecord;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;
 import com.zhihuianxin.xyaxf.app.ApiFactory;

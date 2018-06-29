@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.unqr.NewUnionPayResult;
-import com.axinfu.modellib.thrift.unqr.NewUnionSwepRecordDetail;
-import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
+import modellib.thrift.unqr.NewUnionPayResult;
+import modellib.thrift.unqr.NewUnionSwepRecordDetail;
+import modellib.thrift.unqr.UPQRPayRecord;
 import com.xyaxf.axpay.Util;
 import com.zhihuianxin.xyaxf.App;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

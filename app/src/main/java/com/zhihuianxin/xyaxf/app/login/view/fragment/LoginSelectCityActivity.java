@@ -17,7 +17,7 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.axinfu.modellib.thrift.resource.City;
+import modellib.thrift.resource.City;
 import com.gjiazhe.wavesidebar.WaveSideBar;
 import com.zhihuianxin.xyaxf.app.base.axutil.Util;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;

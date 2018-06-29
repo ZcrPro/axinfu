@@ -11,9 +11,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.PaymentService;
-import com.axinfu.modellib.thrift.payment.CCBWapPay;
-import com.axinfu.modellib.thrift.payment.PayResult;
+import modellib.service.PaymentService;
+import modellib.thrift.payment.CCBWapPay;
+import modellib.thrift.payment.PayResult;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.Util;
 import com.xyaxf.axpay.modle.PayFor;

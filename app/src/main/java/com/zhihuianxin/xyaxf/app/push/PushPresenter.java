@@ -3,9 +3,9 @@ package com.zhihuianxin.xyaxf.app.push;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.MessageService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.message.ImportantMessage;
+import modellib.service.MessageService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.message.ImportantMessage;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

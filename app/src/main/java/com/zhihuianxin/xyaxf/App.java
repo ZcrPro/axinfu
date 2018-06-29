@@ -12,9 +12,9 @@ import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 
 import com.alibaba.sdk.android.man.MANService;
 import com.alibaba.sdk.android.man.MANServiceProvider;
-import com.axinfu.modellib.data.ISession;
-import com.axinfu.modellib.thrift.fee.SubFeeItem;
-import com.axinfu.modellib.thrift.ocp.OcpAccount;
+import modellib.data.ISession;
+import modellib.thrift.fee.SubFeeItem;
+import modellib.thrift.ocp.OcpAccount;
 import com.cocosw.favor.FavorAdapter;
 import com.igexin.sdk.PushManager;
 import com.nostra13.universalimageloader.core.ImageLoader;

@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.ocp.CredentialType;
+import modellib.thrift.ocp.CredentialType;
 import com.zhihuianxin.xyaxf.R;
 
 import java.util.List;

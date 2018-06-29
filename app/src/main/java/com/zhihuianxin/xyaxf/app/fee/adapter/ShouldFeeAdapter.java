@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.fee.SubFee;
+import modellib.thrift.fee.SubFee;
 import com.zhihuianxin.xyaxf.R;
 
 import java.text.DecimalFormat;

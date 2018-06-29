@@ -9,8 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.thrift.message.Action;
-import com.axinfu.modellib.thrift.message.AxfMesssage;
+import modellib.thrift.message.Action;
+import modellib.thrift.message.AxfMesssage;
 import com.zhihuianxin.xyaxf.app.base.axutil.SchedulerProvider;
 import com.zhihuianxin.xyaxf.BaseRealmActionBarActivity;
 import com.zhihuianxin.xyaxf.R;

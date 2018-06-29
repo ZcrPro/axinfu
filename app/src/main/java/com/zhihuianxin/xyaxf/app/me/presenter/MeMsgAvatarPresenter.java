@@ -3,9 +3,9 @@ package com.zhihuianxin.xyaxf.app.me.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.CustomerService;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.thrift.customer.CustomerBaseInfo;
+import modellib.service.CustomerService;
+import modellib.service.MeService;
+import modellib.thrift.customer.CustomerBaseInfo;
 import com.google.gson.Gson;
 import com.zhihuianxin.xyaxf.app.ApiFactory;
 import com.zhihuianxin.xyaxf.app.BaseSubscriber;

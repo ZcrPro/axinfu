@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.app.banner;
 
-import com.axinfu.modellib.thrift.message.Advertise;
+import modellib.thrift.message.Advertise;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

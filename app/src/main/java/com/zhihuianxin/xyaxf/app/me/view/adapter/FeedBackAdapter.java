@@ -13,8 +13,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.app.Appendix;
-import com.axinfu.modellib.thrift.base.Feedback;
+import modellib.thrift.app.Appendix;
+import modellib.thrift.base.Feedback;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;

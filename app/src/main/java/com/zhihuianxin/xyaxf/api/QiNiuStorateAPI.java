@@ -1,6 +1,6 @@
 package com.zhihuianxin.xyaxf.api;
 
-import com.axinfu.modellib.thrift.resource.UploadFileAccess;
+import modellib.thrift.resource.UploadFileAccess;
 import com.qiniu.android.http.ResponseInfo;
 import com.qiniu.android.storage.Configuration;
 import com.qiniu.android.storage.UpCompletionHandler;

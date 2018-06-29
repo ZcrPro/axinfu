@@ -3,11 +3,11 @@ package com.zhihuianxin.xyaxf.app.me.presenter;
 import android.content.Context;
 
 import com.zhihuianxin.xyaxf.app.AppConstant;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.service.UPQRService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
-import com.axinfu.modellib.thrift.fee.PaymentRecord;
-import com.axinfu.modellib.thrift.unqr.UPQRPayRecord;
+import modellib.service.MeService;
+import modellib.service.UPQRService;
+import modellib.thrift.base.BaseResponse;
+import modellib.thrift.fee.PaymentRecord;
+import modellib.thrift.unqr.UPQRPayRecord;
 import com.google.gson.Gson;
 import com.xyaxf.axpay.modle.PayFor;
 import com.zhihuianxin.xyaxf.app.base.axutil.BaseSchedulerProvider;

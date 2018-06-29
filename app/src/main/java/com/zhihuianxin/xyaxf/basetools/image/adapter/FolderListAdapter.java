@@ -1,12 +1,12 @@
 package com.zhihuianxin.xyaxf.basetools.image.adapter;
 
-import android.com.axinfu_lib.R;
 import android.content.Context;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.yuyh.easyadapter.abslistview.EasyLVAdapter;
 import com.yuyh.easyadapter.abslistview.EasyLVHolder;
+import com.zhihuianxin.xyaxf.R;
 import com.zhihuianxin.xyaxf.basetools.image.ImgSelConfig;
 import com.zhihuianxin.xyaxf.basetools.image.bean.Folder;
 import com.zhihuianxin.xyaxf.basetools.image.common.OnFolderChangeListener;

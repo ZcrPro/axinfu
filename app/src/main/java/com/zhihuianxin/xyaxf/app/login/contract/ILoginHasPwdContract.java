@@ -1,8 +1,8 @@
 package com.zhihuianxin.xyaxf.app.login.contract;
 
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.customer.MobileStatus;
-import com.axinfu.modellib.thrift.customer.VerifyField;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.customer.MobileStatus;
+import modellib.thrift.customer.VerifyField;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

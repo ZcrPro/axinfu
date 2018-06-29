@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.zhihuianxin.xyaxf.app.base.BaseActivity;
-import com.axinfu.modellib.service.MeService;
-import com.axinfu.modellib.thrift.base.BaseResponse;
+import modellib.service.MeService;
+import modellib.thrift.base.BaseResponse;
 import com.google.gson.Gson;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;

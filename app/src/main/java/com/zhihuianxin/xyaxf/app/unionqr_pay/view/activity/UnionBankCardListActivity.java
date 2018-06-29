@@ -19,11 +19,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.customer.Customer;
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
-import com.axinfu.modellib.thrift.unqr.UPQROrder;
+import modellib.thrift.customer.Customer;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPCoupon;
+import modellib.thrift.unqr.UPQROrder;
 import com.daimajia.swipe.SwipeLayout;
 import com.daimajia.swipe.adapters.BaseSwipeAdapter;
 import com.daimajia.swipe.util.Attributes;

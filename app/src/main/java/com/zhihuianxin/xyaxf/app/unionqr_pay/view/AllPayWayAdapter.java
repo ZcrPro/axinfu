@@ -10,7 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.axinfu.modellib.thrift.base.PayMethod;
+import modellib.thrift.base.PayMethod;
 import com.google.gson.Gson;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;

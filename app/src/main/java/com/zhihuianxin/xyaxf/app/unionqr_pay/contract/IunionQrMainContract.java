@@ -1,10 +1,10 @@
 package com.zhihuianxin.xyaxf.app.unionqr_pay.contract;
 
-import com.axinfu.modellib.thrift.unqr.PaymentConfig;
-import com.axinfu.modellib.thrift.unqr.UPBankCard;
-import com.axinfu.modellib.thrift.unqr.UPCoupon;
-import com.axinfu.modellib.thrift.unqr.UPQROrder;
-import com.axinfu.modellib.thrift.unqr.UPQRPayeeInfo;
+import modellib.thrift.unqr.PaymentConfig;
+import modellib.thrift.unqr.UPBankCard;
+import modellib.thrift.unqr.UPCoupon;
+import modellib.thrift.unqr.UPQROrder;
+import modellib.thrift.unqr.UPQRPayeeInfo;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

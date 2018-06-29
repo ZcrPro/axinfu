@@ -1,8 +1,8 @@
 package com.zhihuianxin.xyaxf.app.fee.feelist;
 
-import com.axinfu.modellib.thrift.fee.Fee;
-import com.axinfu.modellib.thrift.fee.SchoolRoll;
-import com.axinfu.modellib.thrift.fee.SubFeeDeduction;
+import modellib.thrift.fee.Fee;
+import modellib.thrift.fee.SchoolRoll;
+import modellib.thrift.fee.SubFeeDeduction;
 import com.zhihuianxin.xyaxf.app.BasePresenter;
 import com.zhihuianxin.xyaxf.app.BaseView;
 

@@ -13,9 +13,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.axinfu.modellib.thrift.base.PayChannel;
-import com.axinfu.modellib.thrift.base.PayMethod;
-import com.axinfu.modellib.thrift.payment.PaymentOrder;
+import modellib.thrift.base.PayChannel;
+import modellib.thrift.base.PayMethod;
+import modellib.thrift.payment.PaymentOrder;
 import com.google.gson.Gson;
 import com.unionpay.UPPayAssistEx;
 import com.xyaxf.axpay.AppConstants;
