@@ -118,7 +118,6 @@ dependencies {
     implementation project(':axinfu-lib')
     implementation project(':axinfu-model')
     implementation project(':axinfu-ui')
-
     //滑动标题栏切换fragment控件
     implementation 'com.jpardogo.materialtabstrip:library:1.1.1'
     implementation 'com.github.thepacific:adapter:1.0.6'
@@ -151,4 +150,5 @@ dependencies {
     annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     api "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
     api "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    implementation project(':ax-paycenter')
 }

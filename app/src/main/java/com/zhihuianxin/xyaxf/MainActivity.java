@@ -28,6 +28,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.paycenter.CasherHelper;
 import com.zhihuianxin.xyaxf.app.AppConstant;
 import modellib.service.MeService;
 import modellib.service.UPQRService;
@@ -172,6 +173,8 @@ public class MainActivity extends BaseRealmActionBarActivity implements View.OnC
         if (updateTimeout()) {
             checkUpdate();
         }
+
+//        CasherHelper casherHelper =new CasherHelper(this);
     }
 
     @Override

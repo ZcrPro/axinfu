@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AxPay/AxPay.iml" filepath="$PROJECT_DIR$/AxPay/AxPay.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ax-paycenter/ax-paycenter.iml" filepath="$PROJECT_DIR$/ax-paycenter/ax-paycenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu.iml" filepath="$PROJECT_DIR$/axinfu.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu-lib/axinfu-lib.iml" filepath="$PROJECT_DIR$/axinfu-lib/axinfu-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/axinfu-model/axinfu-model.iml" filepath="$PROJECT_DIR$/axinfu-model/axinfu-model.iml" />
