@@ -676,7 +676,7 @@ public class HomeFragment extends BaseRealmFragment implements HomeContract.Home
     }
 
     private void showAnim(Bitmap loadedImage, List<Advertise> list) {
-        if (loadedImage != null) {
+        if (loadedImage != null&&mLoufang!=null) {
             mLoufang.setBackground(new BitmapDrawable(loadedImage));
             int w = metrics.widthPixels * 13 / 14;
             int h = loadedImage.getHeight() * w / loadedImage.getWidth();

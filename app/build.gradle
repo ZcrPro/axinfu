@@ -150,5 +150,4 @@ dependencies {
     annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     api "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
     api "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
-    implementation project(':ax-paycenter')
 }
